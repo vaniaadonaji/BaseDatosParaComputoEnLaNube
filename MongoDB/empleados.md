@@ -1,4 +1,5 @@
-
+## Json para insertar documentos (empleados)	
+	```json
 	{
 		"nombre": "Gregory",
 		"apellidos": "Juarez",
@@ -239,3 +240,4 @@
 		"salario": 5272,
 		"departamentos": "Quality Assurance, Human Resources, Advertising, Sales and Marketing"
 	}
+	```
