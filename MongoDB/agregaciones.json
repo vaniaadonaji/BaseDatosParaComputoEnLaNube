@@ -1,0 +1,150 @@
+[
+    {
+      $match:
+        {
+          editorial: "Biblio"
+        }
+    },
+    {
+      $project:
+        {
+          _id: 0,
+          titulo: 1,
+          precio: 1,
+          cantidad: 1,
+          "Nombre Editorial": "$editorial",
+          "Total Ganancia": {
+            $multiply: ["$precio", "$cantidad"]
+          }
+        }
+    },
+    {
+      $sort:
+        {
+          precio: 1
+        }
+    }
+],
+
+[
+    {
+      $group:
+        /**
+         * _id: The id of the group.
+         * fieldN: The first field name.
+         */
+        {
+          _id: "$editorial",
+          "Numero Documentos": {
+            $count: {},
+          },
+        },
+    },
+    {
+      $sort:
+        /**
+         * Provide any number of field/order pairs.
+         */
+        {
+          "Numero Documentos": -1,
+        },
+    },
+  ],
+
+
+  [
+    {
+      $group:
+        /**
+         * _id: The id of the group.
+         * fieldN: The first field name.
+         */
+        {
+          _id: "$editorial",
+          "Numero de Documentos": {
+            $count: {},
+          },
+          media: {
+            $avg: "$precio",
+          },
+        },
+    },
+  ],
+
+
+  [
+    {
+      $group:
+        /**
+         * _id: The id of the group.
+         * fieldN: The first field name.
+         */
+        {
+          _id: "$editorial",
+          "Numero de Documentos": {
+            $count: {},
+          },
+          media: {
+            $avg: "$precio",
+          },
+        },
+    },
+    {
+      $set:
+        /**
+         * field: The field name
+         * expression: The expression.
+         */
+        {
+          "Media Total": {
+            $trunc: ["$media", 2],
+          },
+        },
+    },
+    {
+      $out:
+        /**
+         * Provide the name of the output collection.
+         */
+        "Media_Editoriales",
+    },
+  ],
+
+
+  [
+    {
+      $group:
+        /**
+         * _id: The id of the group.
+         * fieldN: The first field name.
+         */
+        {
+          _id: "$editorial",
+          "Numero de Documentos": {
+            $count: {},
+          },
+          media: {
+            $avg: "$precio",
+          },
+        },
+    },
+    {
+      $set:
+        /**
+         * field: The field name
+         * expression: The expression.
+         */
+        {
+          "Media Total": {
+            $trunc: ["$media", 2],
+          },
+        },
+    },
+    {
+      $out:
+        /**
+         * Provide the name of the output collection.
+         */
+        "Media_Editoriales",
+    },
+  ]
