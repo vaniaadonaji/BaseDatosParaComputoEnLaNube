@@ -1,5 +1,19 @@
-# Agregaciones en MongoDB
-### Agregación con 3 Stages
+# MongoDB
+
+## Vania Donaji Velazquez Torres
+
+### Agregaciones en MongoDB
+| Nombre    | Descripción                                                       |
+|-----------|-------------------------------------------------------------------|
+| $match    | Filtra los documentos de una colección para procesar solo aquellos que cumplan con ciertas condiciones.                                   |
+| $project  | Permite modificar la estructura de los documentos de salida, incluyendo o excluyendo campos específicos, creando nuevos campos calculados, o renombrando campos existentes.               |
+| $sort     | Ordena los documentos de una colección según un criterio especificado.                                                         |
+| $unset    | Elimina campos específicos de los documentos de una colección.                                                                 |
+| $set      | Modifica o agrega campos específicos en los documentos de una colección.                                                       |
+| $out      | Escribe el resultado de una etapa de agregación en una colección nueva o existente.                                            |
+| $group    | Agrupa los documentos de una colección según un campo específico y realiza operaciones de agregación en los datos agrupados.     |
+
+#### **Agregación con 3 Stages**
 1. $match
 2. $project
 3. $sort
@@ -33,7 +47,7 @@
 ]
 ```
 
-### Agregación con 2 Stages
+#### **Agregación con 2 Stages**
 1. $group
 2. $sort
 ```json
@@ -63,7 +77,7 @@
   ]
 ```
 
-### Agregación con 1 Stage
+#### **Agregación con 1 Stage**
 1. $group
 ```json
   [
@@ -86,7 +100,7 @@
   ]
 ```
 
-### Agregación con 3 Stages
+#### **Agregación con 3 Stages**
 1. $group
 2. $set
 3. $out
@@ -130,7 +144,7 @@
   ]
 ```
 
-### Agregación con 3 Stages
+#### **Agregación con 3 Stages**
 1. $group
 2. $set
 3. $unset
