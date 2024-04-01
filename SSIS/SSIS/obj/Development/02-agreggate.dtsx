@@ -1,0 +1,1111 @@
+<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="3/27/2024 11:14:52 AM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="DONAJI"
+  DTS:CreatorName="DONAJI\vania"
+  DTS:DTSID="{E8AEBBD1-28FD-475F-A424-7F378B7B3CD1}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="16.0.5397.1"
+  DTS:LocaleID="2058"
+  DTS:ObjectName="02-agreggate"
+  DTS:PackageType="5"
+  DTS:VersionBuild="7"
+  DTS:VersionGUID="{8D9298E7-F215-4328-AC81-DB63AE625EF6}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DONAJI.SSIS]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{C6C634D7-610C-4930-8776-9E0E876D829B}"
+      DTS:ObjectName="DONAJI.SSIS">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=DONAJI;Initial Catalog=SSIS;Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Application Name=SSIS-02-agreggate-{C6C634D7-610C-4930-8776-9E0E876D829B}DONAJI.SSIS;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\ELIMINAR DATOS DE LA TABLA PROMEDIOS"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Tarea Ejecutar SQL"
+      DTS:DTSID="{C60ED7DA-E9D7-4226-A3B8-606FEB030991}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="ELIMINAR DATOS DE LA TABLA PROMEDIOS"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{C6C634D7-610C-4930-8776-9E0E876D829B}"
+          SQLTask:SqlStatementSource="DELETE FROM Promedios&#xA;DELETE FROM JugadoresPorNacionalidades" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\FUNCION DE AGREGADO"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{D85D5C66-A597-43A3-A099-B68577D8732A}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="FUNCION DE AGREGADO"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\FUNCION DE AGREGADO\Aggregate"
+              componentClassID="Microsoft.Aggregate"
+              contactInfo="Aggregate;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;3"
+              description="Aggregates data with functions such as Average, Sum, Count, Max, and Min. For example, group data to compute the sum of sales per product or the average visits per day."
+              name="Aggregate"
+              version="3">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the approximate number of group by keys that the aggregation produces. Low indicates 500,000 key values, Medium indicates 5 million key values, and High indicates more than 25 million key values. Unspecified indicates no KeyScale value is used."
+                  name="KeyScale"
+                  typeConverter="KeyScaleType">0</property>
+                <property
+                  dataType="System.Null"
+                  description="Specifies the exact number of group by keys that the aggregation produces. If a KeyScale value is specified, the value in Keys takes precedence."
+                  name="Keys" />
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the approximate number of distinct values in a column that the aggregation counts distinctly. Low indicates 500,000 key values, Medium indicates 5 million key values, and High indicates more than 25 million key values. Unspecified indicates no CountDistinctScale value is used."
+                  name="CountDistinctScale"
+                  typeConverter="KeyScaleType">0</property>
+                <property
+                  dataType="System.Null"
+                  description="Specifies the exact number of distinct values in a column that the aggregation counts distinctly. If a CountDistinctScale value is specified, the value in CountDistinctKeys takes precedence."
+                  name="CountDistinctKeys" />
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the percentage by which memory can be extended during the aggregation. Valid values are between 1 and 100."
+                  name="AutoExtendFactor">25</property>
+              </properties>
+              <inputs>
+                <input
+                  refId="Package\FUNCION DE AGREGADO\Aggregate.Inputs[Aggregate Input 1]"
+                  name="Aggregate Input 1">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\FUNCION DE AGREGADO\Aggregate.Inputs[Aggregate Input 1].Columns[PiePreferido]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="PiePreferido"
+                      lineageId="Package\FUNCION DE AGREGADO\TABLA ORIGEN FIFA.Outputs[OLE DB Source Output].Columns[PiePreferido]" />
+                    <inputColumn
+                      refId="Package\FUNCION DE AGREGADO\Aggregate.Inputs[Aggregate Input 1].Columns[PesoKG]"
+                      cachedDataType="i4"
+                      cachedName="PesoKG"
+                      lineageId="Package\FUNCION DE AGREGADO\TABLA ORIGEN FIFA.Outputs[OLE DB Source Output].Columns[PesoKG]" />
+                    <inputColumn
+                      refId="Package\FUNCION DE AGREGADO\Aggregate.Inputs[Aggregate Input 1].Columns[Nacionalidad]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="Nacionalidad"
+                      lineageId="Package\FUNCION DE AGREGADO\TABLA ORIGEN FIFA.Outputs[OLE DB Source Output].Columns[Nacionalidad]" />
+                    <inputColumn
+                      refId="Package\FUNCION DE AGREGADO\Aggregate.Inputs[Aggregate Input 1].Columns[ID]"
+                      cachedDataType="i4"
+                      cachedName="ID"
+                      lineageId="Package\FUNCION DE AGREGADO\TABLA ORIGEN FIFA.Outputs[OLE DB Source Output].Columns[ID]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\FUNCION DE AGREGADO\Aggregate.Outputs[PromedioPeso]"
+                  name="PromedioPeso">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the approximate number of group by keys that the aggregation produces. Low indicates 500,000 key values, Medium indicates 5 million key values, and High indicates more than 25 million key values. Unspecified indicates no KeyScale value is used."
+                      name="KeyScale"
+                      typeConverter="KeyScaleType">0</property>
+                    <property
+                      dataType="System.Null"
+                      description="Specifies the exact number of group by keys that the aggregation produces. If a KeyScale value is specified, the value in Keys takes precedence."
+                      name="Keys" />
+                  </properties>
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\FUNCION DE AGREGADO\Aggregate.Outputs[PromedioPeso].Columns[PiePreferido]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\FUNCION DE AGREGADO\Aggregate.Outputs[PromedioPeso].Columns[PiePreferido]"
+                      name="PiePreferido">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the ID of the input column used in the aggregation."
+                          name="AggregationColumnId">#{Package\FUNCION DE AGREGADO\TABLA ORIGEN FIFA.Outputs[OLE DB Source Output].Columns[PiePreferido]}</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the type of aggregation."
+                          name="AggregationType"
+                          typeConverter="AggregationType">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Indicates whether the column requires special handling because it may contain oversized data or it requires precision beyond a float data type."
+                          name="IsBig">1</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the string comparison options."
+                          name="AggregationComparisonFlags">0</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\FUNCION DE AGREGADO\Aggregate.Outputs[PromedioPeso].Columns[PesoKG]"
+                      dataType="r8"
+                      lineageId="Package\FUNCION DE AGREGADO\Aggregate.Outputs[PromedioPeso].Columns[PesoKG]"
+                      name="PesoKG">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the ID of the input column used in the aggregation."
+                          name="AggregationColumnId">#{Package\FUNCION DE AGREGADO\TABLA ORIGEN FIFA.Outputs[OLE DB Source Output].Columns[PesoKG]}</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the type of aggregation."
+                          name="AggregationType"
+                          typeConverter="AggregationType">5</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Indicates whether the column requires special handling because it may contain oversized data or it requires precision beyond a float data type."
+                          name="IsBig">1</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the string comparison options."
+                          name="AggregationComparisonFlags">0</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\FUNCION DE AGREGADO\Aggregate.Outputs[JuadoresPorNacionalidad]"
+                  name="JuadoresPorNacionalidad">
+                  <properties>
+                    <property
+                      dataType="System.UInt32"
+                      description="Specifies the approximate number of group by keys that the aggregation produces. Low indicates 500,000 key values, Medium indicates 5 million key values, and High indicates more than 25 million key values. Unspecified indicates no KeyScale value is used."
+                      name="KeyScale"
+                      typeConverter="KeyScaleType">0</property>
+                    <property
+                      dataType="System.Null"
+                      description="Specifies the exact number of group by keys that the aggregation produces. If a KeyScale value is specified, the value in Keys takes precedence."
+                      name="Keys" />
+                  </properties>
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\FUNCION DE AGREGADO\Aggregate.Outputs[JuadoresPorNacionalidad].Columns[Nacionalidad]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      lineageId="Package\FUNCION DE AGREGADO\Aggregate.Outputs[JuadoresPorNacionalidad].Columns[Nacionalidad]"
+                      name="Nacionalidad">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the ID of the input column used in the aggregation."
+                          name="AggregationColumnId">#{Package\FUNCION DE AGREGADO\TABLA ORIGEN FIFA.Outputs[OLE DB Source Output].Columns[Nacionalidad]}</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the type of aggregation."
+                          name="AggregationType"
+                          typeConverter="AggregationType">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Indicates whether the column requires special handling because it may contain oversized data or it requires precision beyond a float data type."
+                          name="IsBig">1</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the string comparison options."
+                          name="AggregationComparisonFlags">0</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\FUNCION DE AGREGADO\Aggregate.Outputs[JuadoresPorNacionalidad].Columns[ID]"
+                      dataType="ui8"
+                      lineageId="Package\FUNCION DE AGREGADO\Aggregate.Outputs[JuadoresPorNacionalidad].Columns[ID]"
+                      name="ID">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the ID of the input column used in the aggregation."
+                          name="AggregationColumnId">#{Package\FUNCION DE AGREGADO\TABLA ORIGEN FIFA.Outputs[OLE DB Source Output].Columns[ID]}</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the type of aggregation."
+                          name="AggregationType"
+                          typeConverter="AggregationType">1</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Indicates whether the column requires special handling because it may contain oversized data or it requires precision beyond a float data type."
+                          name="IsBig">1</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the string comparison options."
+                          name="AggregationComparisonFlags">0</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\FUNCION DE AGREGADO\JUGADORES POR NACIONALIDADES"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="JUGADORES POR NACIONALIDADES"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[JugadoresPorNacionalidades]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\FUNCION DE AGREGADO\JUGADORES POR NACIONALIDADES.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[DONAJI.SSIS]"
+                  connectionManagerRefId="Package.ConnectionManagers[DONAJI.SSIS]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\FUNCION DE AGREGADO\JUGADORES POR NACIONALIDADES.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\FUNCION DE AGREGADO\JUGADORES POR NACIONALIDADES.Inputs[OLE DB Destination Input].Columns[Nacionalidad]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="Nacionalidad"
+                      externalMetadataColumnId="Package\FUNCION DE AGREGADO\JUGADORES POR NACIONALIDADES.Inputs[OLE DB Destination Input].ExternalColumns[Nacionalidad]"
+                      lineageId="Package\FUNCION DE AGREGADO\Aggregate.Outputs[JuadoresPorNacionalidad].Columns[Nacionalidad]" />
+                    <inputColumn
+                      refId="Package\FUNCION DE AGREGADO\JUGADORES POR NACIONALIDADES.Inputs[OLE DB Destination Input].Columns[ID]"
+                      cachedDataType="ui8"
+                      cachedName="ID"
+                      externalMetadataColumnId="Package\FUNCION DE AGREGADO\JUGADORES POR NACIONALIDADES.Inputs[OLE DB Destination Input].ExternalColumns[CantidadJugadores]"
+                      lineageId="Package\FUNCION DE AGREGADO\Aggregate.Outputs[JuadoresPorNacionalidad].Columns[ID]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\FUNCION DE AGREGADO\JUGADORES POR NACIONALIDADES.Inputs[OLE DB Destination Input].ExternalColumns[Nacionalidad]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="Nacionalidad" />
+                    <externalMetadataColumn
+                      refId="Package\FUNCION DE AGREGADO\JUGADORES POR NACIONALIDADES.Inputs[OLE DB Destination Input].ExternalColumns[CantidadJugadores]"
+                      dataType="i4"
+                      name="CantidadJugadores" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\FUNCION DE AGREGADO\JUGADORES POR NACIONALIDADES.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\FUNCION DE AGREGADO\JUGADORES POR NACIONALIDADES.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\FUNCION DE AGREGADO\JUGADORES POR NACIONALIDADES.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\FUNCION DE AGREGADO\JUGADORES POR NACIONALIDADES.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\FUNCION DE AGREGADO\JUGADORES POR NACIONALIDADES.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\FUNCION DE AGREGADO\JUGADORES POR NACIONALIDADES.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\FUNCION DE AGREGADO\PROMEDIOS DE PIE FAVORITO"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="PROMEDIOS DE PIE FAVORITO"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[Promedios]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\FUNCION DE AGREGADO\PROMEDIOS DE PIE FAVORITO.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[DONAJI.SSIS]"
+                  connectionManagerRefId="Package.ConnectionManagers[DONAJI.SSIS]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\FUNCION DE AGREGADO\PROMEDIOS DE PIE FAVORITO.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\FUNCION DE AGREGADO\PROMEDIOS DE PIE FAVORITO.Inputs[OLE DB Destination Input].Columns[PiePreferido]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="PiePreferido"
+                      externalMetadataColumnId="Package\FUNCION DE AGREGADO\PROMEDIOS DE PIE FAVORITO.Inputs[OLE DB Destination Input].ExternalColumns[PiePref]"
+                      lineageId="Package\FUNCION DE AGREGADO\Aggregate.Outputs[PromedioPeso].Columns[PiePreferido]" />
+                    <inputColumn
+                      refId="Package\FUNCION DE AGREGADO\PROMEDIOS DE PIE FAVORITO.Inputs[OLE DB Destination Input].Columns[PesoKG]"
+                      cachedDataType="r8"
+                      cachedName="PesoKG"
+                      externalMetadataColumnId="Package\FUNCION DE AGREGADO\PROMEDIOS DE PIE FAVORITO.Inputs[OLE DB Destination Input].ExternalColumns[PromedioPesoKG]"
+                      lineageId="Package\FUNCION DE AGREGADO\Aggregate.Outputs[PromedioPeso].Columns[PesoKG]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\FUNCION DE AGREGADO\PROMEDIOS DE PIE FAVORITO.Inputs[OLE DB Destination Input].ExternalColumns[PiePref]"
+                      codePage="1252"
+                      dataType="str"
+                      length="10"
+                      name="PiePref" />
+                    <externalMetadataColumn
+                      refId="Package\FUNCION DE AGREGADO\PROMEDIOS DE PIE FAVORITO.Inputs[OLE DB Destination Input].ExternalColumns[PromedioPesoKG]"
+                      dataType="r8"
+                      name="PromedioPesoKG" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\FUNCION DE AGREGADO\PROMEDIOS DE PIE FAVORITO.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\FUNCION DE AGREGADO\PROMEDIOS DE PIE FAVORITO.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\FUNCION DE AGREGADO\PROMEDIOS DE PIE FAVORITO.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\FUNCION DE AGREGADO\PROMEDIOS DE PIE FAVORITO.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\FUNCION DE AGREGADO\PROMEDIOS DE PIE FAVORITO.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\FUNCION DE AGREGADO\PROMEDIOS DE PIE FAVORITO.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\FUNCION DE AGREGADO\TABLA ORIGEN FIFA"
+              componentClassID="Microsoft.OLEDBSource"
+              contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+              description="OLE DB Source"
+              name="TABLA ORIGEN FIFA"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[FIFA]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.String"
+                  description="The mappings between the parameters in the SQL command and variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\FUNCION DE AGREGADO\TABLA ORIGEN FIFA.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[DONAJI.SSIS]"
+                  connectionManagerRefId="Package.ConnectionManagers[DONAJI.SSIS]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\FUNCION DE AGREGADO\TABLA ORIGEN FIFA.Outputs[OLE DB Source Output]"
+                  name="OLE DB Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\FUNCION DE AGREGADO\TABLA ORIGEN FIFA.Outputs[OLE DB Source Output].Columns[ID]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\FUNCION DE AGREGADO\TABLA ORIGEN FIFA.Outputs[OLE DB Source Output].ExternalColumns[ID]"
+                      lineageId="Package\FUNCION DE AGREGADO\TABLA ORIGEN FIFA.Outputs[OLE DB Source Output].Columns[ID]"
+                      name="ID"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\FUNCION DE AGREGADO\TABLA ORIGEN FIFA.Outputs[OLE DB Source Output].Columns[Nombre]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\FUNCION DE AGREGADO\TABLA ORIGEN FIFA.Outputs[OLE DB Source Output].ExternalColumns[Nombre]"
+                      length="50"
+                      lineageId="Package\FUNCION DE AGREGADO\TABLA ORIGEN FIFA.Outputs[OLE DB Source Output].Columns[Nombre]"
+                      name="Nombre"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\FUNCION DE AGREGADO\TABLA ORIGEN FIFA.Outputs[OLE DB Source Output].Columns[NombreCompleto]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\FUNCION DE AGREGADO\TABLA ORIGEN FIFA.Outputs[OLE DB Source Output].ExternalColumns[NombreCompleto]"
+                      length="150"
+                      lineageId="Package\FUNCION DE AGREGADO\TABLA ORIGEN FIFA.Outputs[OLE DB Source Output].Columns[NombreCompleto]"
+                      name="NombreCompleto"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\FUNCION DE AGREGADO\TABLA ORIGEN FIFA.Outputs[OLE DB Source Output].Columns[Club]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\FUNCION DE AGREGADO\TABLA ORIGEN FIFA.Outputs[OLE DB Source Output].ExternalColumns[Club]"
+                      length="100"
+                      lineageId="Package\FUNCION DE AGREGADO\TABLA ORIGEN FIFA.Outputs[OLE DB Source Output].Columns[Club]"
+                      name="Club"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\FUNCION DE AGREGADO\TABLA ORIGEN FIFA.Outputs[OLE DB Source Output].Columns[Liga]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\FUNCION DE AGREGADO\TABLA ORIGEN FIFA.Outputs[OLE DB Source Output].ExternalColumns[Liga]"
+                      length="100"
+                      lineageId="Package\FUNCION DE AGREGADO\TABLA ORIGEN FIFA.Outputs[OLE DB Source Output].Columns[Liga]"
+                      name="Liga"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\FUNCION DE AGREGADO\TABLA ORIGEN FIFA.Outputs[OLE DB Source Output].Columns[FechaNacimiento]"
+                      dataType="dbDate"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\FUNCION DE AGREGADO\TABLA ORIGEN FIFA.Outputs[OLE DB Source Output].ExternalColumns[FechaNacimiento]"
+                      lineageId="Package\FUNCION DE AGREGADO\TABLA ORIGEN FIFA.Outputs[OLE DB Source Output].Columns[FechaNacimiento]"
+                      name="FechaNacimiento"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\FUNCION DE AGREGADO\TABLA ORIGEN FIFA.Outputs[OLE DB Source Output].Columns[AlturaCM]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\FUNCION DE AGREGADO\TABLA ORIGEN FIFA.Outputs[OLE DB Source Output].ExternalColumns[AlturaCM]"
+                      lineageId="Package\FUNCION DE AGREGADO\TABLA ORIGEN FIFA.Outputs[OLE DB Source Output].Columns[AlturaCM]"
+                      name="AlturaCM"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\FUNCION DE AGREGADO\TABLA ORIGEN FIFA.Outputs[OLE DB Source Output].Columns[PesoKG]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\FUNCION DE AGREGADO\TABLA ORIGEN FIFA.Outputs[OLE DB Source Output].ExternalColumns[PesoKG]"
+                      lineageId="Package\FUNCION DE AGREGADO\TABLA ORIGEN FIFA.Outputs[OLE DB Source Output].Columns[PesoKG]"
+                      name="PesoKG"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\FUNCION DE AGREGADO\TABLA ORIGEN FIFA.Outputs[OLE DB Source Output].Columns[Nacionalidad]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\FUNCION DE AGREGADO\TABLA ORIGEN FIFA.Outputs[OLE DB Source Output].ExternalColumns[Nacionalidad]"
+                      length="100"
+                      lineageId="Package\FUNCION DE AGREGADO\TABLA ORIGEN FIFA.Outputs[OLE DB Source Output].Columns[Nacionalidad]"
+                      name="Nacionalidad"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\FUNCION DE AGREGADO\TABLA ORIGEN FIFA.Outputs[OLE DB Source Output].Columns[ValorEuropa]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\FUNCION DE AGREGADO\TABLA ORIGEN FIFA.Outputs[OLE DB Source Output].ExternalColumns[ValorEuropa]"
+                      lineageId="Package\FUNCION DE AGREGADO\TABLA ORIGEN FIFA.Outputs[OLE DB Source Output].Columns[ValorEuropa]"
+                      name="ValorEuropa"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\FUNCION DE AGREGADO\TABLA ORIGEN FIFA.Outputs[OLE DB Source Output].Columns[PiePreferido]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\FUNCION DE AGREGADO\TABLA ORIGEN FIFA.Outputs[OLE DB Source Output].ExternalColumns[PiePreferido]"
+                      length="50"
+                      lineageId="Package\FUNCION DE AGREGADO\TABLA ORIGEN FIFA.Outputs[OLE DB Source Output].Columns[PiePreferido]"
+                      name="PiePreferido"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\FUNCION DE AGREGADO\TABLA ORIGEN FIFA.Outputs[OLE DB Source Output].ExternalColumns[ID]"
+                      dataType="i4"
+                      name="ID" />
+                    <externalMetadataColumn
+                      refId="Package\FUNCION DE AGREGADO\TABLA ORIGEN FIFA.Outputs[OLE DB Source Output].ExternalColumns[Nombre]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Nombre" />
+                    <externalMetadataColumn
+                      refId="Package\FUNCION DE AGREGADO\TABLA ORIGEN FIFA.Outputs[OLE DB Source Output].ExternalColumns[NombreCompleto]"
+                      codePage="1252"
+                      dataType="str"
+                      length="150"
+                      name="NombreCompleto" />
+                    <externalMetadataColumn
+                      refId="Package\FUNCION DE AGREGADO\TABLA ORIGEN FIFA.Outputs[OLE DB Source Output].ExternalColumns[Club]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="Club" />
+                    <externalMetadataColumn
+                      refId="Package\FUNCION DE AGREGADO\TABLA ORIGEN FIFA.Outputs[OLE DB Source Output].ExternalColumns[Liga]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="Liga" />
+                    <externalMetadataColumn
+                      refId="Package\FUNCION DE AGREGADO\TABLA ORIGEN FIFA.Outputs[OLE DB Source Output].ExternalColumns[FechaNacimiento]"
+                      dataType="dbDate"
+                      name="FechaNacimiento" />
+                    <externalMetadataColumn
+                      refId="Package\FUNCION DE AGREGADO\TABLA ORIGEN FIFA.Outputs[OLE DB Source Output].ExternalColumns[AlturaCM]"
+                      dataType="i4"
+                      name="AlturaCM" />
+                    <externalMetadataColumn
+                      refId="Package\FUNCION DE AGREGADO\TABLA ORIGEN FIFA.Outputs[OLE DB Source Output].ExternalColumns[PesoKG]"
+                      dataType="i4"
+                      name="PesoKG" />
+                    <externalMetadataColumn
+                      refId="Package\FUNCION DE AGREGADO\TABLA ORIGEN FIFA.Outputs[OLE DB Source Output].ExternalColumns[Nacionalidad]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="Nacionalidad" />
+                    <externalMetadataColumn
+                      refId="Package\FUNCION DE AGREGADO\TABLA ORIGEN FIFA.Outputs[OLE DB Source Output].ExternalColumns[ValorEuropa]"
+                      dataType="r8"
+                      name="ValorEuropa" />
+                    <externalMetadataColumn
+                      refId="Package\FUNCION DE AGREGADO\TABLA ORIGEN FIFA.Outputs[OLE DB Source Output].ExternalColumns[PiePreferido]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="PiePreferido" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\FUNCION DE AGREGADO\TABLA ORIGEN FIFA.Outputs[OLE DB Source Error Output]"
+                  isErrorOut="true"
+                  name="OLE DB Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\FUNCION DE AGREGADO\TABLA ORIGEN FIFA.Outputs[OLE DB Source Error Output].Columns[ID]"
+                      dataType="i4"
+                      lineageId="Package\FUNCION DE AGREGADO\TABLA ORIGEN FIFA.Outputs[OLE DB Source Error Output].Columns[ID]"
+                      name="ID" />
+                    <outputColumn
+                      refId="Package\FUNCION DE AGREGADO\TABLA ORIGEN FIFA.Outputs[OLE DB Source Error Output].Columns[Nombre]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\FUNCION DE AGREGADO\TABLA ORIGEN FIFA.Outputs[OLE DB Source Error Output].Columns[Nombre]"
+                      name="Nombre" />
+                    <outputColumn
+                      refId="Package\FUNCION DE AGREGADO\TABLA ORIGEN FIFA.Outputs[OLE DB Source Error Output].Columns[NombreCompleto]"
+                      codePage="1252"
+                      dataType="str"
+                      length="150"
+                      lineageId="Package\FUNCION DE AGREGADO\TABLA ORIGEN FIFA.Outputs[OLE DB Source Error Output].Columns[NombreCompleto]"
+                      name="NombreCompleto" />
+                    <outputColumn
+                      refId="Package\FUNCION DE AGREGADO\TABLA ORIGEN FIFA.Outputs[OLE DB Source Error Output].Columns[Club]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      lineageId="Package\FUNCION DE AGREGADO\TABLA ORIGEN FIFA.Outputs[OLE DB Source Error Output].Columns[Club]"
+                      name="Club" />
+                    <outputColumn
+                      refId="Package\FUNCION DE AGREGADO\TABLA ORIGEN FIFA.Outputs[OLE DB Source Error Output].Columns[Liga]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      lineageId="Package\FUNCION DE AGREGADO\TABLA ORIGEN FIFA.Outputs[OLE DB Source Error Output].Columns[Liga]"
+                      name="Liga" />
+                    <outputColumn
+                      refId="Package\FUNCION DE AGREGADO\TABLA ORIGEN FIFA.Outputs[OLE DB Source Error Output].Columns[FechaNacimiento]"
+                      dataType="dbDate"
+                      lineageId="Package\FUNCION DE AGREGADO\TABLA ORIGEN FIFA.Outputs[OLE DB Source Error Output].Columns[FechaNacimiento]"
+                      name="FechaNacimiento" />
+                    <outputColumn
+                      refId="Package\FUNCION DE AGREGADO\TABLA ORIGEN FIFA.Outputs[OLE DB Source Error Output].Columns[AlturaCM]"
+                      dataType="i4"
+                      lineageId="Package\FUNCION DE AGREGADO\TABLA ORIGEN FIFA.Outputs[OLE DB Source Error Output].Columns[AlturaCM]"
+                      name="AlturaCM" />
+                    <outputColumn
+                      refId="Package\FUNCION DE AGREGADO\TABLA ORIGEN FIFA.Outputs[OLE DB Source Error Output].Columns[PesoKG]"
+                      dataType="i4"
+                      lineageId="Package\FUNCION DE AGREGADO\TABLA ORIGEN FIFA.Outputs[OLE DB Source Error Output].Columns[PesoKG]"
+                      name="PesoKG" />
+                    <outputColumn
+                      refId="Package\FUNCION DE AGREGADO\TABLA ORIGEN FIFA.Outputs[OLE DB Source Error Output].Columns[Nacionalidad]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      lineageId="Package\FUNCION DE AGREGADO\TABLA ORIGEN FIFA.Outputs[OLE DB Source Error Output].Columns[Nacionalidad]"
+                      name="Nacionalidad" />
+                    <outputColumn
+                      refId="Package\FUNCION DE AGREGADO\TABLA ORIGEN FIFA.Outputs[OLE DB Source Error Output].Columns[ValorEuropa]"
+                      dataType="r8"
+                      lineageId="Package\FUNCION DE AGREGADO\TABLA ORIGEN FIFA.Outputs[OLE DB Source Error Output].Columns[ValorEuropa]"
+                      name="ValorEuropa" />
+                    <outputColumn
+                      refId="Package\FUNCION DE AGREGADO\TABLA ORIGEN FIFA.Outputs[OLE DB Source Error Output].Columns[PiePreferido]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\FUNCION DE AGREGADO\TABLA ORIGEN FIFA.Outputs[OLE DB Source Error Output].Columns[PiePreferido]"
+                      name="PiePreferido" />
+                    <outputColumn
+                      refId="Package\FUNCION DE AGREGADO\TABLA ORIGEN FIFA.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\FUNCION DE AGREGADO\TABLA ORIGEN FIFA.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\FUNCION DE AGREGADO\TABLA ORIGEN FIFA.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\FUNCION DE AGREGADO\TABLA ORIGEN FIFA.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\FUNCION DE AGREGADO.Paths[JuadoresPorNacionalidad]"
+              endId="Package\FUNCION DE AGREGADO\JUGADORES POR NACIONALIDADES.Inputs[OLE DB Destination Input]"
+              name="JuadoresPorNacionalidad"
+              startId="Package\FUNCION DE AGREGADO\Aggregate.Outputs[JuadoresPorNacionalidad]" />
+            <path
+              refId="Package\FUNCION DE AGREGADO.Paths[OLE DB Source Output]"
+              endId="Package\FUNCION DE AGREGADO\Aggregate.Inputs[Aggregate Input 1]"
+              name="OLE DB Source Output"
+              startId="Package\FUNCION DE AGREGADO\TABLA ORIGEN FIFA.Outputs[OLE DB Source Output]" />
+            <path
+              refId="Package\FUNCION DE AGREGADO.Paths[PromedioPeso]"
+              endId="Package\FUNCION DE AGREGADO\PROMEDIOS DE PIE FAVORITO.Inputs[OLE DB Destination Input]"
+              name="PromedioPeso"
+              startId="Package\FUNCION DE AGREGADO\Aggregate.Outputs[PromedioPeso]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Restricción]"
+      DTS:CreationName=""
+      DTS:DTSID="{E63EB16A-0FC1-4AC4-B16F-B00C4012594C}"
+      DTS:From="Package\ELIMINAR DATOS DE LA TABLA PROMEDIOS"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Restricción"
+      DTS:To="Package\FUNCION DE AGREGADO" />
+  </DTS:PrecedenceConstraints>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--Esta sección CDATA contiene la información de diseño del paquete. Esta sección incluye información como, por ejemplo, las coordenadas (x,y), el ancho y el alto.-->
+<!--Si edita manualmente esta sección y comete un error, puede eliminarlo. -->
+<!--El paquete podrá cargarse normalmente, pero se perderá la información de diseño anterior y el diseñador reorganizará los elementos automáticamente en la superficie de diseño.-->
+<Objects
+  Version="8">
+  <!--Cada uno de los nodos siguientes contiene propiedades que no afectan al comportamiento en tiempo de ejecución.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="314,42"
+          Id="Package\ELIMINAR DATOS DE LA TABLA PROMEDIOS"
+          TopLeft="338,39" />
+        <NodeLayout
+          Size="214,42"
+          Id="Package\FUNCION DE AGREGADO"
+          TopLeft="373,132" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Restricción]"
+          TopLeft="495,81">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-15,51"
+              Start="0,0"
+              End="-15,43.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,21.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,21.5"
+                    Point2="0,25.5"
+                    Point3="-4,25.5" />
+                  <mssgle:LineSegment
+                    End="-11,25.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-11,25.5"
+                    Point2="-15,25.5"
+                    Point3="-15,29.5" />
+                  <mssgle:LineSegment
+                    End="-15,43.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\FUNCION DE AGREGADO">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="187,42"
+          Id="Package\FUNCION DE AGREGADO\TABLA ORIGEN FIFA"
+          TopLeft="310,17" />
+        <NodeLayout
+          Size="130,42"
+          Id="Package\FUNCION DE AGREGADO\Aggregate"
+          TopLeft="329,117" />
+        <EdgeLayout
+          Id="Package\FUNCION DE AGREGADO.Paths[OLE DB Source Output]"
+          TopLeft="403.5,59">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-9.5,58"
+              Start="0,0"
+              End="-9.5,50.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,25" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,25"
+                    Point2="0,29"
+                    Point3="-4,29" />
+                  <mssgle:LineSegment
+                    End="-5.5,29" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-5.5,29"
+                    Point2="-9.5,29"
+                    Point3="-9.5,33" />
+                  <mssgle:LineSegment
+                    End="-9.5,50.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="244,42"
+          Id="Package\FUNCION DE AGREGADO\PROMEDIOS DE PIE FAVORITO"
+          TopLeft="63,194" />
+        <NodeLayout
+          Size="274,42"
+          Id="Package\FUNCION DE AGREGADO\JUGADORES POR NACIONALIDADES"
+          TopLeft="483,197" />
+        <EdgeLayout
+          Id="Package\FUNCION DE AGREGADO.Paths[PromedioPeso]"
+          TopLeft="394,159">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-209,35"
+              Start="0,0"
+              End="-209,27.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,13.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,13.5"
+                    Point2="0,17.5"
+                    Point3="-4,17.5" />
+                  <mssgle:LineSegment
+                    End="-205,17.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-205,17.5"
+                    Point2="-209,17.5"
+                    Point3="-209,21.5" />
+                  <mssgle:LineSegment
+                    End="-209,27.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-136.04703125,22.5,63.0940625,9.7490234375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\FUNCION DE AGREGADO.Paths[JuadoresPorNacionalidad]"
+          TopLeft="414.333333333333,159">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="205.666666666667,38"
+              Start="0,0"
+              End="205.666666666667,30.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,11.4772036474164" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,11.4772036474164"
+                    Point2="0,15.4772036474164"
+                    Point3="4,15.4772036474164" />
+                  <mssgle:LineSegment
+                    End="201.666666666667,15.4772036474164" />
+                  <mssgle:CubicBezierSegment
+                    Point1="201.666666666667,15.4772036474164"
+                    Point2="205.666666666667,15.4772036474164"
+                    Point3="205.666666666667,19.4772036474164" />
+                  <mssgle:LineSegment
+                    End="205.666666666667,30.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="47.2936653645833,20.4772036474164,111.0793359375,9.7490234375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\FUNCION DE AGREGADO\TABLA ORIGEN FIFA">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\FUNCION DE AGREGADO\PROMEDIOS DE PIE FAVORITO">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\FUNCION DE AGREGADO\JUGADORES POR NACIONALIDADES">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>

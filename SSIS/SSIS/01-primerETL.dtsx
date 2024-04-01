@@ -1,0 +1,780 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="3/27/2024 10:17:13 AM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="DONAJI"
+  DTS:CreatorName="DONAJI\vania"
+  DTS:DTSID="{B96CABCD-C873-4C0F-916B-E27B8B18781B}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="16.0.5397.1"
+  DTS:LocaleID="2058"
+  DTS:ObjectName="Package"
+  DTS:PackageType="5"
+  DTS:VersionBuild="6"
+  DTS:VersionGUID="{5FE9F789-5256-488D-94C6-94AF54686FE0}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DONAJI.SSIS]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{2DD27F21-72AF-4C26-90EF-24A2E96D444A}"
+      DTS:ObjectName="DONAJI.SSIS">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=DONAJI;Initial Catalog=SSIS;Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Application Name=SSIS-Package-{2DD27F21-72AF-4C26-90EF-24A2E96D444A}DONAJI.SSIS;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\COPIAR DATOS DE FIFA A FIFACOPIA"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{15CCCC81-EAB0-401C-A119-82FF5F9B449A}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="COPIAR DATOS DE FIFA A FIFACOPIA"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\COPIAR DATOS DE FIFA A FIFACOPIA\DESTINO TABLA FIFACOPIA"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="DESTINO TABLA FIFACOPIA"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[FIFACopia]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\COPIAR DATOS DE FIFA A FIFACOPIA\DESTINO TABLA FIFACOPIA.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[DONAJI.SSIS]"
+                  connectionManagerRefId="Package.ConnectionManagers[DONAJI.SSIS]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\COPIAR DATOS DE FIFA A FIFACOPIA\DESTINO TABLA FIFACOPIA.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\COPIAR DATOS DE FIFA A FIFACOPIA\DESTINO TABLA FIFACOPIA.Inputs[OLE DB Destination Input].Columns[ID]"
+                      cachedDataType="i4"
+                      cachedName="ID"
+                      externalMetadataColumnId="Package\COPIAR DATOS DE FIFA A FIFACOPIA\DESTINO TABLA FIFACOPIA.Inputs[OLE DB Destination Input].ExternalColumns[ID]"
+                      lineageId="Package\COPIAR DATOS DE FIFA A FIFACOPIA\ORIGEN TABLA FIFA.Outputs[OLE DB Source Output].Columns[ID]" />
+                    <inputColumn
+                      refId="Package\COPIAR DATOS DE FIFA A FIFACOPIA\DESTINO TABLA FIFACOPIA.Inputs[OLE DB Destination Input].Columns[Nombre]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Nombre"
+                      externalMetadataColumnId="Package\COPIAR DATOS DE FIFA A FIFACOPIA\DESTINO TABLA FIFACOPIA.Inputs[OLE DB Destination Input].ExternalColumns[Nombre]"
+                      lineageId="Package\COPIAR DATOS DE FIFA A FIFACOPIA\ORIGEN TABLA FIFA.Outputs[OLE DB Source Output].Columns[Nombre]" />
+                    <inputColumn
+                      refId="Package\COPIAR DATOS DE FIFA A FIFACOPIA\DESTINO TABLA FIFACOPIA.Inputs[OLE DB Destination Input].Columns[NombreCompleto]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="150"
+                      cachedName="NombreCompleto"
+                      externalMetadataColumnId="Package\COPIAR DATOS DE FIFA A FIFACOPIA\DESTINO TABLA FIFACOPIA.Inputs[OLE DB Destination Input].ExternalColumns[NombreCompleto]"
+                      lineageId="Package\COPIAR DATOS DE FIFA A FIFACOPIA\ORIGEN TABLA FIFA.Outputs[OLE DB Source Output].Columns[NombreCompleto]" />
+                    <inputColumn
+                      refId="Package\COPIAR DATOS DE FIFA A FIFACOPIA\DESTINO TABLA FIFACOPIA.Inputs[OLE DB Destination Input].Columns[Club]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="Club"
+                      externalMetadataColumnId="Package\COPIAR DATOS DE FIFA A FIFACOPIA\DESTINO TABLA FIFACOPIA.Inputs[OLE DB Destination Input].ExternalColumns[Club]"
+                      lineageId="Package\COPIAR DATOS DE FIFA A FIFACOPIA\ORIGEN TABLA FIFA.Outputs[OLE DB Source Output].Columns[Club]" />
+                    <inputColumn
+                      refId="Package\COPIAR DATOS DE FIFA A FIFACOPIA\DESTINO TABLA FIFACOPIA.Inputs[OLE DB Destination Input].Columns[Liga]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="Liga"
+                      externalMetadataColumnId="Package\COPIAR DATOS DE FIFA A FIFACOPIA\DESTINO TABLA FIFACOPIA.Inputs[OLE DB Destination Input].ExternalColumns[Liga]"
+                      lineageId="Package\COPIAR DATOS DE FIFA A FIFACOPIA\ORIGEN TABLA FIFA.Outputs[OLE DB Source Output].Columns[Liga]" />
+                    <inputColumn
+                      refId="Package\COPIAR DATOS DE FIFA A FIFACOPIA\DESTINO TABLA FIFACOPIA.Inputs[OLE DB Destination Input].Columns[FechaNacimiento]"
+                      cachedDataType="dbDate"
+                      cachedName="FechaNacimiento"
+                      externalMetadataColumnId="Package\COPIAR DATOS DE FIFA A FIFACOPIA\DESTINO TABLA FIFACOPIA.Inputs[OLE DB Destination Input].ExternalColumns[FechaNacimiento]"
+                      lineageId="Package\COPIAR DATOS DE FIFA A FIFACOPIA\ORIGEN TABLA FIFA.Outputs[OLE DB Source Output].Columns[FechaNacimiento]" />
+                    <inputColumn
+                      refId="Package\COPIAR DATOS DE FIFA A FIFACOPIA\DESTINO TABLA FIFACOPIA.Inputs[OLE DB Destination Input].Columns[AlturaCM]"
+                      cachedDataType="i4"
+                      cachedName="AlturaCM"
+                      externalMetadataColumnId="Package\COPIAR DATOS DE FIFA A FIFACOPIA\DESTINO TABLA FIFACOPIA.Inputs[OLE DB Destination Input].ExternalColumns[AlturaCM]"
+                      lineageId="Package\COPIAR DATOS DE FIFA A FIFACOPIA\ORIGEN TABLA FIFA.Outputs[OLE DB Source Output].Columns[AlturaCM]" />
+                    <inputColumn
+                      refId="Package\COPIAR DATOS DE FIFA A FIFACOPIA\DESTINO TABLA FIFACOPIA.Inputs[OLE DB Destination Input].Columns[PesoKG]"
+                      cachedDataType="i4"
+                      cachedName="PesoKG"
+                      externalMetadataColumnId="Package\COPIAR DATOS DE FIFA A FIFACOPIA\DESTINO TABLA FIFACOPIA.Inputs[OLE DB Destination Input].ExternalColumns[PesoKG]"
+                      lineageId="Package\COPIAR DATOS DE FIFA A FIFACOPIA\ORIGEN TABLA FIFA.Outputs[OLE DB Source Output].Columns[PesoKG]" />
+                    <inputColumn
+                      refId="Package\COPIAR DATOS DE FIFA A FIFACOPIA\DESTINO TABLA FIFACOPIA.Inputs[OLE DB Destination Input].Columns[Nacionalidad]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="Nacionalidad"
+                      externalMetadataColumnId="Package\COPIAR DATOS DE FIFA A FIFACOPIA\DESTINO TABLA FIFACOPIA.Inputs[OLE DB Destination Input].ExternalColumns[Nacionalidad]"
+                      lineageId="Package\COPIAR DATOS DE FIFA A FIFACOPIA\ORIGEN TABLA FIFA.Outputs[OLE DB Source Output].Columns[Nacionalidad]" />
+                    <inputColumn
+                      refId="Package\COPIAR DATOS DE FIFA A FIFACOPIA\DESTINO TABLA FIFACOPIA.Inputs[OLE DB Destination Input].Columns[ValorEuropa]"
+                      cachedDataType="r8"
+                      cachedName="ValorEuropa"
+                      externalMetadataColumnId="Package\COPIAR DATOS DE FIFA A FIFACOPIA\DESTINO TABLA FIFACOPIA.Inputs[OLE DB Destination Input].ExternalColumns[ValorEuropa]"
+                      lineageId="Package\COPIAR DATOS DE FIFA A FIFACOPIA\ORIGEN TABLA FIFA.Outputs[OLE DB Source Output].Columns[ValorEuropa]" />
+                    <inputColumn
+                      refId="Package\COPIAR DATOS DE FIFA A FIFACOPIA\DESTINO TABLA FIFACOPIA.Inputs[OLE DB Destination Input].Columns[PiePreferido]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="PiePreferido"
+                      externalMetadataColumnId="Package\COPIAR DATOS DE FIFA A FIFACOPIA\DESTINO TABLA FIFACOPIA.Inputs[OLE DB Destination Input].ExternalColumns[PiePreferido]"
+                      lineageId="Package\COPIAR DATOS DE FIFA A FIFACOPIA\ORIGEN TABLA FIFA.Outputs[OLE DB Source Output].Columns[PiePreferido]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\COPIAR DATOS DE FIFA A FIFACOPIA\DESTINO TABLA FIFACOPIA.Inputs[OLE DB Destination Input].ExternalColumns[ID]"
+                      dataType="i4"
+                      name="ID" />
+                    <externalMetadataColumn
+                      refId="Package\COPIAR DATOS DE FIFA A FIFACOPIA\DESTINO TABLA FIFACOPIA.Inputs[OLE DB Destination Input].ExternalColumns[Nombre]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Nombre" />
+                    <externalMetadataColumn
+                      refId="Package\COPIAR DATOS DE FIFA A FIFACOPIA\DESTINO TABLA FIFACOPIA.Inputs[OLE DB Destination Input].ExternalColumns[NombreCompleto]"
+                      codePage="1252"
+                      dataType="str"
+                      length="150"
+                      name="NombreCompleto" />
+                    <externalMetadataColumn
+                      refId="Package\COPIAR DATOS DE FIFA A FIFACOPIA\DESTINO TABLA FIFACOPIA.Inputs[OLE DB Destination Input].ExternalColumns[Club]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="Club" />
+                    <externalMetadataColumn
+                      refId="Package\COPIAR DATOS DE FIFA A FIFACOPIA\DESTINO TABLA FIFACOPIA.Inputs[OLE DB Destination Input].ExternalColumns[Liga]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="Liga" />
+                    <externalMetadataColumn
+                      refId="Package\COPIAR DATOS DE FIFA A FIFACOPIA\DESTINO TABLA FIFACOPIA.Inputs[OLE DB Destination Input].ExternalColumns[FechaNacimiento]"
+                      dataType="dbDate"
+                      name="FechaNacimiento" />
+                    <externalMetadataColumn
+                      refId="Package\COPIAR DATOS DE FIFA A FIFACOPIA\DESTINO TABLA FIFACOPIA.Inputs[OLE DB Destination Input].ExternalColumns[AlturaCM]"
+                      dataType="i4"
+                      name="AlturaCM" />
+                    <externalMetadataColumn
+                      refId="Package\COPIAR DATOS DE FIFA A FIFACOPIA\DESTINO TABLA FIFACOPIA.Inputs[OLE DB Destination Input].ExternalColumns[PesoKG]"
+                      dataType="i4"
+                      name="PesoKG" />
+                    <externalMetadataColumn
+                      refId="Package\COPIAR DATOS DE FIFA A FIFACOPIA\DESTINO TABLA FIFACOPIA.Inputs[OLE DB Destination Input].ExternalColumns[Nacionalidad]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="Nacionalidad" />
+                    <externalMetadataColumn
+                      refId="Package\COPIAR DATOS DE FIFA A FIFACOPIA\DESTINO TABLA FIFACOPIA.Inputs[OLE DB Destination Input].ExternalColumns[ValorEuropa]"
+                      dataType="r8"
+                      name="ValorEuropa" />
+                    <externalMetadataColumn
+                      refId="Package\COPIAR DATOS DE FIFA A FIFACOPIA\DESTINO TABLA FIFACOPIA.Inputs[OLE DB Destination Input].ExternalColumns[PiePreferido]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="PiePreferido" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\COPIAR DATOS DE FIFA A FIFACOPIA\DESTINO TABLA FIFACOPIA.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\COPIAR DATOS DE FIFA A FIFACOPIA\DESTINO TABLA FIFACOPIA.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\COPIAR DATOS DE FIFA A FIFACOPIA\DESTINO TABLA FIFACOPIA.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\COPIAR DATOS DE FIFA A FIFACOPIA\DESTINO TABLA FIFACOPIA.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\COPIAR DATOS DE FIFA A FIFACOPIA\DESTINO TABLA FIFACOPIA.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\COPIAR DATOS DE FIFA A FIFACOPIA\DESTINO TABLA FIFACOPIA.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\COPIAR DATOS DE FIFA A FIFACOPIA\ORIGEN TABLA FIFA"
+              componentClassID="Microsoft.OLEDBSource"
+              contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+              description="OLE DB Source"
+              name="ORIGEN TABLA FIFA"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[FIFA]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">SELECT TOP 100 * FROM FIFA</property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">2</property>
+                <property
+                  dataType="System.String"
+                  description="The mappings between the parameters in the SQL command and variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\COPIAR DATOS DE FIFA A FIFACOPIA\ORIGEN TABLA FIFA.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[DONAJI.SSIS]"
+                  connectionManagerRefId="Package.ConnectionManagers[DONAJI.SSIS]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\COPIAR DATOS DE FIFA A FIFACOPIA\ORIGEN TABLA FIFA.Outputs[OLE DB Source Output]"
+                  name="OLE DB Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\COPIAR DATOS DE FIFA A FIFACOPIA\ORIGEN TABLA FIFA.Outputs[OLE DB Source Output].Columns[ID]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\COPIAR DATOS DE FIFA A FIFACOPIA\ORIGEN TABLA FIFA.Outputs[OLE DB Source Output].ExternalColumns[ID]"
+                      lineageId="Package\COPIAR DATOS DE FIFA A FIFACOPIA\ORIGEN TABLA FIFA.Outputs[OLE DB Source Output].Columns[ID]"
+                      name="ID"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\COPIAR DATOS DE FIFA A FIFACOPIA\ORIGEN TABLA FIFA.Outputs[OLE DB Source Output].Columns[Nombre]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\COPIAR DATOS DE FIFA A FIFACOPIA\ORIGEN TABLA FIFA.Outputs[OLE DB Source Output].ExternalColumns[Nombre]"
+                      length="50"
+                      lineageId="Package\COPIAR DATOS DE FIFA A FIFACOPIA\ORIGEN TABLA FIFA.Outputs[OLE DB Source Output].Columns[Nombre]"
+                      name="Nombre"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\COPIAR DATOS DE FIFA A FIFACOPIA\ORIGEN TABLA FIFA.Outputs[OLE DB Source Output].Columns[NombreCompleto]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\COPIAR DATOS DE FIFA A FIFACOPIA\ORIGEN TABLA FIFA.Outputs[OLE DB Source Output].ExternalColumns[NombreCompleto]"
+                      length="150"
+                      lineageId="Package\COPIAR DATOS DE FIFA A FIFACOPIA\ORIGEN TABLA FIFA.Outputs[OLE DB Source Output].Columns[NombreCompleto]"
+                      name="NombreCompleto"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\COPIAR DATOS DE FIFA A FIFACOPIA\ORIGEN TABLA FIFA.Outputs[OLE DB Source Output].Columns[Club]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\COPIAR DATOS DE FIFA A FIFACOPIA\ORIGEN TABLA FIFA.Outputs[OLE DB Source Output].ExternalColumns[Club]"
+                      length="100"
+                      lineageId="Package\COPIAR DATOS DE FIFA A FIFACOPIA\ORIGEN TABLA FIFA.Outputs[OLE DB Source Output].Columns[Club]"
+                      name="Club"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\COPIAR DATOS DE FIFA A FIFACOPIA\ORIGEN TABLA FIFA.Outputs[OLE DB Source Output].Columns[Liga]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\COPIAR DATOS DE FIFA A FIFACOPIA\ORIGEN TABLA FIFA.Outputs[OLE DB Source Output].ExternalColumns[Liga]"
+                      length="100"
+                      lineageId="Package\COPIAR DATOS DE FIFA A FIFACOPIA\ORIGEN TABLA FIFA.Outputs[OLE DB Source Output].Columns[Liga]"
+                      name="Liga"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\COPIAR DATOS DE FIFA A FIFACOPIA\ORIGEN TABLA FIFA.Outputs[OLE DB Source Output].Columns[FechaNacimiento]"
+                      dataType="dbDate"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\COPIAR DATOS DE FIFA A FIFACOPIA\ORIGEN TABLA FIFA.Outputs[OLE DB Source Output].ExternalColumns[FechaNacimiento]"
+                      lineageId="Package\COPIAR DATOS DE FIFA A FIFACOPIA\ORIGEN TABLA FIFA.Outputs[OLE DB Source Output].Columns[FechaNacimiento]"
+                      name="FechaNacimiento"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\COPIAR DATOS DE FIFA A FIFACOPIA\ORIGEN TABLA FIFA.Outputs[OLE DB Source Output].Columns[AlturaCM]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\COPIAR DATOS DE FIFA A FIFACOPIA\ORIGEN TABLA FIFA.Outputs[OLE DB Source Output].ExternalColumns[AlturaCM]"
+                      lineageId="Package\COPIAR DATOS DE FIFA A FIFACOPIA\ORIGEN TABLA FIFA.Outputs[OLE DB Source Output].Columns[AlturaCM]"
+                      name="AlturaCM"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\COPIAR DATOS DE FIFA A FIFACOPIA\ORIGEN TABLA FIFA.Outputs[OLE DB Source Output].Columns[PesoKG]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\COPIAR DATOS DE FIFA A FIFACOPIA\ORIGEN TABLA FIFA.Outputs[OLE DB Source Output].ExternalColumns[PesoKG]"
+                      lineageId="Package\COPIAR DATOS DE FIFA A FIFACOPIA\ORIGEN TABLA FIFA.Outputs[OLE DB Source Output].Columns[PesoKG]"
+                      name="PesoKG"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\COPIAR DATOS DE FIFA A FIFACOPIA\ORIGEN TABLA FIFA.Outputs[OLE DB Source Output].Columns[Nacionalidad]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\COPIAR DATOS DE FIFA A FIFACOPIA\ORIGEN TABLA FIFA.Outputs[OLE DB Source Output].ExternalColumns[Nacionalidad]"
+                      length="100"
+                      lineageId="Package\COPIAR DATOS DE FIFA A FIFACOPIA\ORIGEN TABLA FIFA.Outputs[OLE DB Source Output].Columns[Nacionalidad]"
+                      name="Nacionalidad"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\COPIAR DATOS DE FIFA A FIFACOPIA\ORIGEN TABLA FIFA.Outputs[OLE DB Source Output].Columns[ValorEuropa]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\COPIAR DATOS DE FIFA A FIFACOPIA\ORIGEN TABLA FIFA.Outputs[OLE DB Source Output].ExternalColumns[ValorEuropa]"
+                      lineageId="Package\COPIAR DATOS DE FIFA A FIFACOPIA\ORIGEN TABLA FIFA.Outputs[OLE DB Source Output].Columns[ValorEuropa]"
+                      name="ValorEuropa"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\COPIAR DATOS DE FIFA A FIFACOPIA\ORIGEN TABLA FIFA.Outputs[OLE DB Source Output].Columns[PiePreferido]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\COPIAR DATOS DE FIFA A FIFACOPIA\ORIGEN TABLA FIFA.Outputs[OLE DB Source Output].ExternalColumns[PiePreferido]"
+                      length="50"
+                      lineageId="Package\COPIAR DATOS DE FIFA A FIFACOPIA\ORIGEN TABLA FIFA.Outputs[OLE DB Source Output].Columns[PiePreferido]"
+                      name="PiePreferido"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\COPIAR DATOS DE FIFA A FIFACOPIA\ORIGEN TABLA FIFA.Outputs[OLE DB Source Output].ExternalColumns[ID]"
+                      dataType="i4"
+                      name="ID" />
+                    <externalMetadataColumn
+                      refId="Package\COPIAR DATOS DE FIFA A FIFACOPIA\ORIGEN TABLA FIFA.Outputs[OLE DB Source Output].ExternalColumns[Nombre]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Nombre" />
+                    <externalMetadataColumn
+                      refId="Package\COPIAR DATOS DE FIFA A FIFACOPIA\ORIGEN TABLA FIFA.Outputs[OLE DB Source Output].ExternalColumns[NombreCompleto]"
+                      codePage="1252"
+                      dataType="str"
+                      length="150"
+                      name="NombreCompleto" />
+                    <externalMetadataColumn
+                      refId="Package\COPIAR DATOS DE FIFA A FIFACOPIA\ORIGEN TABLA FIFA.Outputs[OLE DB Source Output].ExternalColumns[Club]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="Club" />
+                    <externalMetadataColumn
+                      refId="Package\COPIAR DATOS DE FIFA A FIFACOPIA\ORIGEN TABLA FIFA.Outputs[OLE DB Source Output].ExternalColumns[Liga]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="Liga" />
+                    <externalMetadataColumn
+                      refId="Package\COPIAR DATOS DE FIFA A FIFACOPIA\ORIGEN TABLA FIFA.Outputs[OLE DB Source Output].ExternalColumns[FechaNacimiento]"
+                      dataType="dbDate"
+                      name="FechaNacimiento" />
+                    <externalMetadataColumn
+                      refId="Package\COPIAR DATOS DE FIFA A FIFACOPIA\ORIGEN TABLA FIFA.Outputs[OLE DB Source Output].ExternalColumns[AlturaCM]"
+                      dataType="i4"
+                      name="AlturaCM" />
+                    <externalMetadataColumn
+                      refId="Package\COPIAR DATOS DE FIFA A FIFACOPIA\ORIGEN TABLA FIFA.Outputs[OLE DB Source Output].ExternalColumns[PesoKG]"
+                      dataType="i4"
+                      name="PesoKG" />
+                    <externalMetadataColumn
+                      refId="Package\COPIAR DATOS DE FIFA A FIFACOPIA\ORIGEN TABLA FIFA.Outputs[OLE DB Source Output].ExternalColumns[Nacionalidad]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="Nacionalidad" />
+                    <externalMetadataColumn
+                      refId="Package\COPIAR DATOS DE FIFA A FIFACOPIA\ORIGEN TABLA FIFA.Outputs[OLE DB Source Output].ExternalColumns[ValorEuropa]"
+                      dataType="r8"
+                      name="ValorEuropa" />
+                    <externalMetadataColumn
+                      refId="Package\COPIAR DATOS DE FIFA A FIFACOPIA\ORIGEN TABLA FIFA.Outputs[OLE DB Source Output].ExternalColumns[PiePreferido]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="PiePreferido" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\COPIAR DATOS DE FIFA A FIFACOPIA\ORIGEN TABLA FIFA.Outputs[OLE DB Source Error Output]"
+                  isErrorOut="true"
+                  name="OLE DB Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\COPIAR DATOS DE FIFA A FIFACOPIA\ORIGEN TABLA FIFA.Outputs[OLE DB Source Error Output].Columns[ID]"
+                      dataType="i4"
+                      lineageId="Package\COPIAR DATOS DE FIFA A FIFACOPIA\ORIGEN TABLA FIFA.Outputs[OLE DB Source Error Output].Columns[ID]"
+                      name="ID" />
+                    <outputColumn
+                      refId="Package\COPIAR DATOS DE FIFA A FIFACOPIA\ORIGEN TABLA FIFA.Outputs[OLE DB Source Error Output].Columns[Nombre]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\COPIAR DATOS DE FIFA A FIFACOPIA\ORIGEN TABLA FIFA.Outputs[OLE DB Source Error Output].Columns[Nombre]"
+                      name="Nombre" />
+                    <outputColumn
+                      refId="Package\COPIAR DATOS DE FIFA A FIFACOPIA\ORIGEN TABLA FIFA.Outputs[OLE DB Source Error Output].Columns[NombreCompleto]"
+                      codePage="1252"
+                      dataType="str"
+                      length="150"
+                      lineageId="Package\COPIAR DATOS DE FIFA A FIFACOPIA\ORIGEN TABLA FIFA.Outputs[OLE DB Source Error Output].Columns[NombreCompleto]"
+                      name="NombreCompleto" />
+                    <outputColumn
+                      refId="Package\COPIAR DATOS DE FIFA A FIFACOPIA\ORIGEN TABLA FIFA.Outputs[OLE DB Source Error Output].Columns[Club]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      lineageId="Package\COPIAR DATOS DE FIFA A FIFACOPIA\ORIGEN TABLA FIFA.Outputs[OLE DB Source Error Output].Columns[Club]"
+                      name="Club" />
+                    <outputColumn
+                      refId="Package\COPIAR DATOS DE FIFA A FIFACOPIA\ORIGEN TABLA FIFA.Outputs[OLE DB Source Error Output].Columns[Liga]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      lineageId="Package\COPIAR DATOS DE FIFA A FIFACOPIA\ORIGEN TABLA FIFA.Outputs[OLE DB Source Error Output].Columns[Liga]"
+                      name="Liga" />
+                    <outputColumn
+                      refId="Package\COPIAR DATOS DE FIFA A FIFACOPIA\ORIGEN TABLA FIFA.Outputs[OLE DB Source Error Output].Columns[FechaNacimiento]"
+                      dataType="dbDate"
+                      lineageId="Package\COPIAR DATOS DE FIFA A FIFACOPIA\ORIGEN TABLA FIFA.Outputs[OLE DB Source Error Output].Columns[FechaNacimiento]"
+                      name="FechaNacimiento" />
+                    <outputColumn
+                      refId="Package\COPIAR DATOS DE FIFA A FIFACOPIA\ORIGEN TABLA FIFA.Outputs[OLE DB Source Error Output].Columns[AlturaCM]"
+                      dataType="i4"
+                      lineageId="Package\COPIAR DATOS DE FIFA A FIFACOPIA\ORIGEN TABLA FIFA.Outputs[OLE DB Source Error Output].Columns[AlturaCM]"
+                      name="AlturaCM" />
+                    <outputColumn
+                      refId="Package\COPIAR DATOS DE FIFA A FIFACOPIA\ORIGEN TABLA FIFA.Outputs[OLE DB Source Error Output].Columns[PesoKG]"
+                      dataType="i4"
+                      lineageId="Package\COPIAR DATOS DE FIFA A FIFACOPIA\ORIGEN TABLA FIFA.Outputs[OLE DB Source Error Output].Columns[PesoKG]"
+                      name="PesoKG" />
+                    <outputColumn
+                      refId="Package\COPIAR DATOS DE FIFA A FIFACOPIA\ORIGEN TABLA FIFA.Outputs[OLE DB Source Error Output].Columns[Nacionalidad]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      lineageId="Package\COPIAR DATOS DE FIFA A FIFACOPIA\ORIGEN TABLA FIFA.Outputs[OLE DB Source Error Output].Columns[Nacionalidad]"
+                      name="Nacionalidad" />
+                    <outputColumn
+                      refId="Package\COPIAR DATOS DE FIFA A FIFACOPIA\ORIGEN TABLA FIFA.Outputs[OLE DB Source Error Output].Columns[ValorEuropa]"
+                      dataType="r8"
+                      lineageId="Package\COPIAR DATOS DE FIFA A FIFACOPIA\ORIGEN TABLA FIFA.Outputs[OLE DB Source Error Output].Columns[ValorEuropa]"
+                      name="ValorEuropa" />
+                    <outputColumn
+                      refId="Package\COPIAR DATOS DE FIFA A FIFACOPIA\ORIGEN TABLA FIFA.Outputs[OLE DB Source Error Output].Columns[PiePreferido]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\COPIAR DATOS DE FIFA A FIFACOPIA\ORIGEN TABLA FIFA.Outputs[OLE DB Source Error Output].Columns[PiePreferido]"
+                      name="PiePreferido" />
+                    <outputColumn
+                      refId="Package\COPIAR DATOS DE FIFA A FIFACOPIA\ORIGEN TABLA FIFA.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\COPIAR DATOS DE FIFA A FIFACOPIA\ORIGEN TABLA FIFA.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\COPIAR DATOS DE FIFA A FIFACOPIA\ORIGEN TABLA FIFA.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\COPIAR DATOS DE FIFA A FIFACOPIA\ORIGEN TABLA FIFA.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\COPIAR DATOS DE FIFA A FIFACOPIA.Paths[OLE DB Source Output]"
+              endId="Package\COPIAR DATOS DE FIFA A FIFACOPIA\DESTINO TABLA FIFACOPIA.Inputs[OLE DB Destination Input]"
+              name="OLE DB Source Output"
+              startId="Package\COPIAR DATOS DE FIFA A FIFACOPIA\ORIGEN TABLA FIFA.Outputs[OLE DB Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\LIMPIAR LA TABLA FIFACOPIA"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Tarea Ejecutar SQL"
+      DTS:DTSID="{D30D550B-026E-44D9-BEE1-72B382EC3643}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="LIMPIAR LA TABLA FIFACOPIA"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{2DD27F21-72AF-4C26-90EF-24A2E96D444A}"
+          SQLTask:SqlStatementSource="truncate table FIFACopia" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Restricción]"
+      DTS:CreationName=""
+      DTS:DTSID="{E894C80C-2206-4FA3-9326-1B7636CA1BB6}"
+      DTS:From="Package\LIMPIAR LA TABLA FIFACOPIA"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Restricción"
+      DTS:To="Package\COPIAR DATOS DE FIFA A FIFACOPIA" />
+  </DTS:PrecedenceConstraints>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--Esta sección CDATA contiene la información de diseño del paquete. Esta sección incluye información como, por ejemplo, las coordenadas (x,y), el ancho y el alto.-->
+<!--Si edita manualmente esta sección y comete un error, puede eliminarlo. -->
+<!--El paquete podrá cargarse normalmente, pero se perderá la información de diseño anterior y el diseñador reorganizará los elementos automáticamente en la superficie de diseño.-->
+<Objects
+  Version="8">
+  <!--Cada uno de los nodos siguientes contiene propiedades que no afectan al comportamiento en tiempo de ejecución.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="238,42"
+          Id="Package\LIMPIAR LA TABLA FIFACOPIA"
+          TopLeft="258,61" />
+        <NodeLayout
+          Size="278,42"
+          Id="Package\COPIAR DATOS DE FIFA A FIFACOPIA"
+          TopLeft="273,181" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Restricción]"
+          TopLeft="377,103">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="35,78"
+              Start="0,0"
+              End="35,70.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,35" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,35"
+                    Point2="0,39"
+                    Point3="4,39" />
+                  <mssgle:LineSegment
+                    End="31,39" />
+                  <mssgle:CubicBezierSegment
+                    Point1="31,39"
+                    Point2="35,39"
+                    Point3="35,43" />
+                  <mssgle:LineSegment
+                    End="35,70.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\COPIAR DATOS DE FIFA A FIFACOPIA">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="187,42"
+          Id="Package\COPIAR DATOS DE FIFA A FIFACOPIA\ORIGEN TABLA FIFA"
+          TopLeft="307,18" />
+        <NodeLayout
+          Size="227,42"
+          Id="Package\COPIAR DATOS DE FIFA A FIFACOPIA\DESTINO TABLA FIFACOPIA"
+          TopLeft="304,120" />
+        <EdgeLayout
+          Id="Package\COPIAR DATOS DE FIFA A FIFACOPIA.Paths[OLE DB Source Output]"
+          TopLeft="400.5,60">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="17,60"
+              Start="0,0"
+              End="17,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,26" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,26"
+                    Point2="0,30"
+                    Point3="4,30" />
+                  <mssgle:LineSegment
+                    End="13,30" />
+                  <mssgle:CubicBezierSegment
+                    Point1="13,30"
+                    Point2="17,30"
+                    Point3="17,34" />
+                  <mssgle:LineSegment
+                    End="17,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\COPIAR DATOS DE FIFA A FIFACOPIA\ORIGEN TABLA FIFA">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\COPIAR DATOS DE FIFA A FIFACOPIA\DESTINO TABLA FIFACOPIA">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
