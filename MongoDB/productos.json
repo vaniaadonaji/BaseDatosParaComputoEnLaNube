@@ -1,0 +1,536 @@
+ {
+        "codigo": 0,
+        "nombre": "Fantastic Wooden Fish",
+        "unidades": 95,
+        "precio": 291,
+        "fabricante": "Kimberly-Clark",
+        "tipo": "avanzado"
+    }
+    {
+        "codigo": 1,
+        "nombre": "Rustic Concrete Pants",
+        "unidades": 66,
+        "precio": 279,
+        "fabricante": "Mercury General",
+        "tipo": "medio"
+    }
+    {
+        "codigo": 2,
+        "nombre": "Small Soft Fish",
+        "unidades": 96,
+        "precio": 189,
+        "fabricante": "Primoris Services",
+        "tipo": "medio"
+    }
+    {
+        "codigo": 3,
+        "nombre": "Practical Soft Pants",
+        "unidades": 41,
+        "precio": 67,
+        "fabricante": "Hyatt Hotels",
+        "tipo": "avanzado"
+    }
+    {
+        "codigo": 4,
+        "nombre": "Ergonomic Metal Ball",
+        "unidades": 5,
+        "precio": 246,
+        "fabricante": "Seaboard",
+        "tipo": "medio"
+    }
+    {
+        "codigo": 5,
+        "nombre": "Small Steel Gloves",
+        "unidades": 45,
+        "precio": 37,
+        "fabricante": "TrueBlue",
+        "tipo": "avanzado"
+    }
+    {
+        "codigo": 6,
+        "nombre": "Ergonomic Wooden Shirt",
+        "unidades": 63,
+        "precio": 238,
+        "fabricante": "Securian Financial Group",
+        "tipo": "avanzado"
+    }
+    {
+        "codigo": 7,
+        "nombre": "Handmade Steel Chair",
+        "unidades": 16,
+        "precio": 337,
+        "fabricante": "CIT Group",
+        "tipo": "medio"
+    }
+    {
+        "codigo": 8,
+        "nombre": "Handcrafted Soft Gloves",
+        "unidades": 16,
+        "precio": 282,
+        "fabricante": "Pep Boys-Mann",
+        "tipo": "basico"
+    }
+    {
+        "codigo": 9,
+        "nombre": "Fantastic Concrete Salad",
+        "unidades": 49,
+        "precio": 265,
+        "fabricante": "Kar Auction Services",
+        "tipo": "basico"
+    }
+    {
+        "codigo": 10,
+        "nombre": "Handmade Plastic Hat",
+        "unidades": 7,
+        "precio": 253,
+        "fabricante": "Dick's Sporting Goods",
+        "tipo": "medio"
+    }
+    {
+        "codigo": 11,
+        "nombre": "Refined Wooden Tuna",
+        "unidades": 40,
+        "precio": 212,
+        "fabricante": "WGL Holdings",
+        "tipo": "avanzado"
+    }
+    {
+        "codigo": 12,
+        "nombre": "Refined Concrete Salad",
+        "unidades": 90,
+        "precio": 129,
+        "fabricante": "Universal Health Services",
+        "tipo": "avanzado"
+    }
+    {
+        "codigo": 13,
+        "nombre": "Unbranded Soft Fish",
+        "unidades": 53,
+        "precio": 178,
+        "fabricante": "Total System Services",
+        "tipo": "basico"
+    }
+    {
+        "codigo": 14,
+        "nombre": "Small Concrete Fish",
+        "unidades": 40,
+        "precio": 126,
+        "fabricante": "Precision Castparts",
+        "tipo": "medio"
+    }
+    {
+        "codigo": 15,
+        "nombre": "Refined Concrete Bike",
+        "unidades": 15,
+        "precio": 180,
+        "fabricante": "Trinity Industries",
+        "tipo": "basico"
+    }
+    {
+        "codigo": 16,
+        "nombre": "Tasty Cotton Pants",
+        "unidades": 68,
+        "precio": 52,
+        "fabricante": "Cabot",
+        "tipo": "basico"
+    }
+    {
+        "codigo": 17,
+        "nombre": "Incredible Granite Gloves",
+        "unidades": 71,
+        "precio": 290,
+        "fabricante": "Oneok",
+        "tipo": "avanzado"
+    }
+    {
+        "codigo": 18,
+        "nombre": "Practical Metal Mouse",
+        "unidades": 35,
+        "precio": 190,
+        "fabricante": "National Oilwell Varco",
+        "tipo": "basico"
+    }
+    {
+        "codigo": 19,
+        "nombre": "Handcrafted Steel Chicken",
+        "unidades": 55,
+        "precio": 113,
+        "fabricante": "State Street Corp.",
+        "tipo": "medio"
+    }
+    {
+        "codigo": 20,
+        "nombre": "Ergonomic Metal Table",
+        "unidades": 0,
+        "precio": 94,
+        "fabricante": "Kelly Services",
+        "tipo": "avanzado"
+    }
+    {
+        "codigo": 21,
+        "nombre": "Tasty Wooden Ball",
+        "unidades": 18,
+        "precio": 76,
+        "fabricante": "State Farm Insurance Cos.",
+        "tipo": "basico"
+    }
+    {
+        "codigo": 22,
+        "nombre": "Unbranded Soft Table",
+        "unidades": 41,
+        "precio": 284,
+        "fabricante": "Motorola Solutions",
+        "tipo": "avanzado"
+    }
+    {
+        "codigo": 23,
+        "nombre": "Handcrafted Metal Tuna",
+        "unidades": 63,
+        "precio": 320,
+        "fabricante": "Williams-Sonoma",
+        "tipo": "medio"
+    }
+    {
+        "codigo": 24,
+        "nombre": "Incredible Frozen Shirt",
+        "unidades": 37,
+        "precio": 173,
+        "fabricante": "Hawaiian Holdings",
+        "tipo": "basico"
+    }
+    {
+        "codigo": 25,
+        "nombre": "Licensed Fresh Chicken",
+        "unidades": 65,
+        "precio": 233,
+        "fabricante": "Kemper",
+        "tipo": "basico"
+    }
+    {
+        "codigo": 26,
+        "nombre": "Intelligent Plastic Bike",
+        "unidades": 39,
+        "precio": 241,
+        "fabricante": "Tractor Supply",
+        "tipo": "medio"
+    }
+    {
+        "codigo": 27,
+        "nombre": "Sleek Steel Chicken",
+        "unidades": 47,
+        "precio": 131,
+        "fabricante": "Mondelez International",
+        "tipo": "avanzado"
+    }
+    {
+        "codigo": 28,
+        "nombre": "Handcrafted Granite Cheese",
+        "unidades": 27,
+        "precio": 304,
+        "fabricante": "Lennar",
+        "tipo": "medio"
+    }
+    {
+        "codigo": 29,
+        "nombre": "Unbranded Soft Computer",
+        "unidades": 33,
+        "precio": 69,
+        "fabricante": "Delta Tucker Holdings",
+        "tipo": "medio"
+    }
+    {
+        "codigo": 30,
+        "nombre": "Small Rubber Pants",
+        "unidades": 89,
+        "precio": 16,
+        "fabricante": "Hanesbrands",
+        "tipo": "basico"
+    }
+    {
+        "codigo": 31,
+        "nombre": "Generic Fresh Keyboard",
+        "unidades": 69,
+        "precio": 16,
+        "fabricante": "WestRock",
+        "tipo": "medio"
+    }
+    {
+        "codigo": 32,
+        "nombre": "Sleek Soft Towels",
+        "unidades": 68,
+        "precio": 68,
+        "fabricante": "Alere",
+        "tipo": "medio"
+    }
+    {
+        "codigo": 33,
+        "nombre": "Generic Concrete Hat",
+        "unidades": 82,
+        "precio": 70,
+        "fabricante": "American Tire Distributors Holdings",
+        "tipo": "basico"
+    }
+    {
+        "codigo": 34,
+        "nombre": "Practical Cotton Keyboard",
+        "unidades": 43,
+        "precio": 25,
+        "fabricante": "AutoNation",
+        "tipo": "medio"
+    }
+    {
+        "codigo": 35,
+        "nombre": "Sleek Frozen Hat",
+        "unidades": 40,
+        "precio": 110,
+        "fabricante": "Pool",
+        "tipo": "basico"
+    }
+    {
+        "codigo": 36,
+        "nombre": "Rustic Soft Table",
+        "unidades": 73,
+        "precio": 331,
+        "fabricante": "Werner Enterprises",
+        "tipo": "medio"
+    }
+    {
+        "codigo": 37,
+        "nombre": "Awesome Soft Gloves",
+        "unidades": 35,
+        "precio": 18,
+        "fabricante": "Anthem",
+        "tipo": "avanzado"
+    }
+    {
+        "codigo": 38,
+        "nombre": "Rustic Steel Shoes",
+        "unidades": 39,
+        "precio": 257,
+        "fabricante": "Universal American",
+        "tipo": "basico"
+    }
+    {
+        "codigo": 39,
+        "nombre": "Handmade Soft Chips",
+        "unidades": 56,
+        "precio": 208,
+        "fabricante": "State Farm Insurance Cos.",
+        "tipo": "medio"
+    }
+    {
+        "codigo": 40,
+        "nombre": "Handmade Frozen Salad",
+        "unidades": 13,
+        "precio": 85,
+        "fabricante": "Nordstrom",
+        "tipo": "medio"
+    }
+    {
+        "codigo": 41,
+        "nombre": "Awesome Cotton Cheese",
+        "unidades": 56,
+        "precio": 277,
+        "fabricante": "HealthSouth",
+        "tipo": "basico"
+    }
+    {
+        "codigo": 42,
+        "nombre": "Licensed Granite Ball",
+        "unidades": 74,
+        "precio": 92,
+        "fabricante": "SunPower",
+        "tipo": "medio"
+    }
+    {
+        "codigo": 43,
+        "nombre": "Sleek Frozen Table",
+        "unidades": 50,
+        "precio": 77,
+        "fabricante": "Archrock",
+        "tipo": "avanzado"
+    }
+    {
+        "codigo": 44,
+        "nombre": "Sleek Steel Ball",
+        "unidades": 36,
+        "precio": 236,
+        "fabricante": "TransDigm Group",
+        "tipo": "avanzado"
+    }
+    {
+        "codigo": 45,
+        "nombre": "Fantastic Soft Pants",
+        "unidades": 78,
+        "precio": 103,
+        "fabricante": "TEGNA",
+        "tipo": "basico"
+    }
+    {
+        "codigo": 46,
+        "nombre": "Intelligent Metal Bike",
+        "unidades": 16,
+        "precio": 141,
+        "fabricante": "Core-Mark Holding",
+        "tipo": "avanzado"
+    }
+    {
+        "codigo": 47,
+        "nombre": "Practical Frozen Chips",
+        "unidades": 0,
+        "precio": 305,
+        "fabricante": "Delta Air Lines",
+        "tipo": "medio"
+    }
+    {
+        "codigo": 48,
+        "nombre": "Refined Plastic Hat",
+        "unidades": 52,
+        "precio": 81,
+        "fabricante": "Wendy's",
+        "tipo": "basico"
+    }
+    {
+        "codigo": 49,
+        "nombre": "Licensed Concrete Soap",
+        "unidades": 21,
+        "precio": 68,
+        "fabricante": "First Solar",
+        "tipo": "basico"
+    }
+    {
+        "codigo": 50,
+        "nombre": "Awesome Frozen Shoes",
+        "unidades": 33,
+        "precio": 125,
+        "fabricante": "Comerica",
+        "tipo": "medio"
+    }
+    {
+        "codigo": 51,
+        "nombre": "Fantastic Metal Pants",
+        "unidades": 5,
+        "precio": 129,
+        "fabricante": "OneMain Holdings",
+        "tipo": "basico"
+    }
+    {
+        "codigo": 52,
+        "nombre": "Ergonomic Metal Hat",
+        "unidades": 25,
+        "precio": 85,
+        "fabricante": "Kar Auction Services",
+        "tipo": "basico"
+    }
+    {
+        "codigo": 53,
+        "nombre": "Licensed Plastic Hat",
+        "unidades": 96,
+        "precio": 38,
+        "fabricante": "Best Buy",
+        "tipo": "medio"
+    }
+    {
+        "codigo": 54,
+        "nombre": "Generic Metal Sausages",
+        "unidades": 84,
+        "precio": 77,
+        "fabricante": "DST Systems",
+        "tipo": "medio"
+    }
+    {
+        "codigo": 55,
+        "nombre": "Small Metal Tuna",
+        "unidades": 46,
+        "precio": 43,
+        "fabricante": "Raymond James Financial",
+        "tipo": "medio"
+    }
+    {
+        "codigo": 56,
+        "nombre": "Intelligent Frozen Sausages",
+        "unidades": 3,
+        "precio": 111,
+        "fabricante": "A.O. Smith",
+        "tipo": "basico"
+    }
+    {
+        "codigo": 57,
+        "nombre": "Practical Fresh Fish",
+        "unidades": 69,
+        "precio": 331,
+        "fabricante": "Hartford Financial Services Group",
+        "tipo": "avanzado"
+    }
+    {
+        "codigo": 58,
+        "nombre": "Refined Concrete Shirt",
+        "unidades": 57,
+        "precio": 49,
+        "fabricante": "Simon Property Group",
+        "tipo": "basico"
+    }
+    {
+        "codigo": 59,
+        "nombre": "Handcrafted Granite Chicken",
+        "unidades": 26,
+        "precio": 164,
+        "fabricante": "Comcast",
+        "tipo": "medio"
+    }
+    {
+        "codigo": 60,
+        "nombre": "Practical Frozen Salad",
+        "unidades": 43,
+        "precio": 250,
+        "fabricante": "Nasdaq OMX Group",
+        "tipo": "basico"
+    }
+    {
+        "codigo": 61,
+        "nombre": "Sleek Rubber Keyboard",
+        "unidades": 82,
+        "precio": 33,
+        "fabricante": "Alere",
+        "tipo": "basico"
+    }
+    {
+        "codigo": 62,
+        "nombre": "Ergonomic Steel Fish",
+        "unidades": 10,
+        "precio": 94,
+        "fabricante": "HCA Holdings",
+        "tipo": "avanzado"
+    }
+    {
+        "codigo": 63,
+        "nombre": "Rustic Plastic Mouse",
+        "unidades": 5,
+        "precio": 24,
+        "fabricante": "Orbital ATK",
+        "tipo": "avanzado"
+    }
+    {
+        "codigo": 64,
+        "nombre": "Awesome Cotton Mouse",
+        "unidades": 39,
+        "precio": 285,
+        "fabricante": "Telephone & Data Systems",
+        "tipo": "basico"
+    }
+    {
+        "codigo": 65,
+        "nombre": "Intelligent Soft Towels",
+        "unidades": 19,
+        "precio": 93,
+        "fabricante": "Ascena Retail Group",
+        "tipo": "avanzado"
+    }
+    {
+        "codigo": 66,
+        "nombre": "Incredible Concrete Fish",
+        "unidades": 96,
+        "precio": 336,
+        "fabricante": "Darling Ingredients",
+        "tipo": "medio"
+    }
