@@ -1,0 +1,132 @@
+EnglishProductName,Color,EnglishDescription,ListPrice
+"Sport-100 Helmet, Red",Red,"Universal fit, well-vented, lightweight , snap-on visor.",33.6442
+"Sport-100 Helmet, Red",Red,"Universal fit, well-vented, lightweight , snap-on visor.",33.6442
+"Sport-100 Helmet, Red",Red,"Universal fit, well-vented, lightweight , snap-on visor.",34.99
+"Sport-100 Helmet, Black",Black,"Universal fit, well-vented, lightweight , snap-on visor.",33.6442
+"Sport-100 Helmet, Black",Black,"Universal fit, well-vented, lightweight , snap-on visor.",33.6442
+"Sport-100 Helmet, Black",Black,"Universal fit, well-vented, lightweight , snap-on visor.",34.99
+"Mountain Bike Socks, M",White,Combination of natural and synthetic fibers stays dry and provides just the right cushioning.,9.5
+"Mountain Bike Socks, L",White,Combination of natural and synthetic fibers stays dry and provides just the right cushioning.,9.5
+"Sport-100 Helmet, Blue",Blue,"Universal fit, well-vented, lightweight , snap-on visor.",33.6442
+"Sport-100 Helmet, Blue",Blue,"Universal fit, well-vented, lightweight , snap-on visor.",33.6442
+"Sport-100 Helmet, Blue",Blue,"Universal fit, well-vented, lightweight , snap-on visor.",34.99
+AWC Logo Cap,Multi,Traditional style with a flip-up brim; one-size fits all.,8.6442
+AWC Logo Cap,Multi,Traditional style with a flip-up brim; one-size fits all.,8.6442
+AWC Logo Cap,Multi,Traditional style with a flip-up brim; one-size fits all.,8.99
+"Long-Sleeve Logo Jersey, S",Multi,Unisex long-sleeve AWC logo microfiber cycling jersey,48.0673
+"Long-Sleeve Logo Jersey, S",Multi,Unisex long-sleeve AWC logo microfiber cycling jersey,48.0673
+"Long-Sleeve Logo Jersey, S",Multi,Unisex long-sleeve AWC logo microfiber cycling jersey,49.99
+"Long-Sleeve Logo Jersey, M",Multi,Unisex long-sleeve AWC logo microfiber cycling jersey,48.0673
+"Long-Sleeve Logo Jersey, M",Multi,Unisex long-sleeve AWC logo microfiber cycling jersey,48.0673
+"Long-Sleeve Logo Jersey, M",Multi,Unisex long-sleeve AWC logo microfiber cycling jersey,49.99
+"Long-Sleeve Logo Jersey, L",Multi,Unisex long-sleeve AWC logo microfiber cycling jersey,48.0673
+"Long-Sleeve Logo Jersey, L",Multi,Unisex long-sleeve AWC logo microfiber cycling jersey,48.0673
+"Long-Sleeve Logo Jersey, L",Multi,Unisex long-sleeve AWC logo microfiber cycling jersey,49.99
+"Long-Sleeve Logo Jersey, XL",Multi,Unisex long-sleeve AWC logo microfiber cycling jersey,48.0673
+"Long-Sleeve Logo Jersey, XL",Multi,Unisex long-sleeve AWC logo microfiber cycling jersey,48.0673
+"Long-Sleeve Logo Jersey, XL",Multi,Unisex long-sleeve AWC logo microfiber cycling jersey,49.99
+"HL Road Frame - Red, 62",Red,Our lightest and best quality aluminum frame made from the newest alloy; it is welded and heat-treated for strength. Our innovative design results in maximum comfort and performance.,1263.4598
+"HL Road Frame - Red, 62",Red,Our lightest and best quality aluminum frame made from the newest alloy; it is welded and heat-treated for strength. Our innovative design results in maximum comfort and performance.,1301.3636
+"HL Road Frame - Red, 62",Red,Our lightest and best quality aluminum frame made from the newest alloy; it is welded and heat-treated for strength. Our innovative design results in maximum comfort and performance.,1431.5
+"HL Road Frame - Red, 44",Red,Our lightest and best quality aluminum frame made from the newest alloy; it is welded and heat-treated for strength. Our innovative design results in maximum comfort and performance.,1263.4598
+"HL Road Frame - Red, 44",Red,Our lightest and best quality aluminum frame made from the newest alloy; it is welded and heat-treated for strength. Our innovative design results in maximum comfort and performance.,1301.3636
+"HL Road Frame - Red, 44",Red,Our lightest and best quality aluminum frame made from the newest alloy; it is welded and heat-treated for strength. Our innovative design results in maximum comfort and performance.,1431.5
+"HL Road Frame - Red, 48",Red,Our lightest and best quality aluminum frame made from the newest alloy; it is welded and heat-treated for strength. Our innovative design results in maximum comfort and performance.,1263.4598
+"HL Road Frame - Red, 48",Red,Our lightest and best quality aluminum frame made from the newest alloy; it is welded and heat-treated for strength. Our innovative design results in maximum comfort and performance.,1301.3636
+"HL Road Frame - Red, 48",Red,Our lightest and best quality aluminum frame made from the newest alloy; it is welded and heat-treated for strength. Our innovative design results in maximum comfort and performance.,1431.5
+"HL Road Frame - Red, 52",Red,Our lightest and best quality aluminum frame made from the newest alloy; it is welded and heat-treated for strength. Our innovative design results in maximum comfort and performance.,1263.4598
+"HL Road Frame - Red, 52",Red,Our lightest and best quality aluminum frame made from the newest alloy; it is welded and heat-treated for strength. Our innovative design results in maximum comfort and performance.,1301.3636
+"HL Road Frame - Red, 52",Red,Our lightest and best quality aluminum frame made from the newest alloy; it is welded and heat-treated for strength. Our innovative design results in maximum comfort and performance.,1431.5
+"HL Road Frame - Red, 56",Red,Our lightest and best quality aluminum frame made from the newest alloy; it is welded and heat-treated for strength. Our innovative design results in maximum comfort and performance.,1263.4598
+"HL Road Frame - Red, 56",Red,Our lightest and best quality aluminum frame made from the newest alloy; it is welded and heat-treated for strength. Our innovative design results in maximum comfort and performance.,1301.3636
+"HL Road Frame - Red, 56",Red,Our lightest and best quality aluminum frame made from the newest alloy; it is welded and heat-treated for strength. Our innovative design results in maximum comfort and performance.,1431.5
+"LL Road Frame - Black, 58",Black,"The LL Frame provides a safe comfortable ride, while offering superior bump absorption in a value-priced aluminum frame.",297.6346
+"LL Road Frame - Black, 58",Black,"The LL Frame provides a safe comfortable ride, while offering superior bump absorption in a value-priced aluminum frame.",306.5636
+"LL Road Frame - Black, 58",Black,"The LL Frame provides a safe comfortable ride, while offering superior bump absorption in a value-priced aluminum frame.",337.22
+"LL Road Frame - Black, 60",Black,"The LL Frame provides a safe comfortable ride, while offering superior bump absorption in a value-priced aluminum frame.",297.6346
+"LL Road Frame - Black, 60",Black,"The LL Frame provides a safe comfortable ride, while offering superior bump absorption in a value-priced aluminum frame.",306.5636
+"LL Road Frame - Black, 60",Black,"The LL Frame provides a safe comfortable ride, while offering superior bump absorption in a value-priced aluminum frame.",337.22
+"LL Road Frame - Black, 62",Black,"The LL Frame provides a safe comfortable ride, while offering superior bump absorption in a value-priced aluminum frame.",297.6346
+"LL Road Frame - Black, 62",Black,"The LL Frame provides a safe comfortable ride, while offering superior bump absorption in a value-priced aluminum frame.",306.5636
+"LL Road Frame - Black, 62",Black,"The LL Frame provides a safe comfortable ride, while offering superior bump absorption in a value-priced aluminum frame.",337.22
+"LL Road Frame - Red, 44",Red,"The LL Frame provides a safe comfortable ride, while offering superior bump absorption in a value-priced aluminum frame.",306.5636
+"LL Road Frame - Red, 44",Red,"The LL Frame provides a safe comfortable ride, while offering superior bump absorption in a value-priced aluminum frame.",337.22
+"LL Road Frame - Red, 48",Red,"The LL Frame provides a safe comfortable ride, while offering superior bump absorption in a value-priced aluminum frame.",306.5636
+"LL Road Frame - Red, 48",Red,"The LL Frame provides a safe comfortable ride, while offering superior bump absorption in a value-priced aluminum frame.",337.22
+"LL Road Frame - Red, 52",Red,"The LL Frame provides a safe comfortable ride, while offering superior bump absorption in a value-priced aluminum frame.",306.5636
+"LL Road Frame - Red, 52",Red,"The LL Frame provides a safe comfortable ride, while offering superior bump absorption in a value-priced aluminum frame.",337.22
+"LL Road Frame - Red, 58",Red,"The LL Frame provides a safe comfortable ride, while offering superior bump absorption in a value-priced aluminum frame.",306.5636
+"LL Road Frame - Red, 58",Red,"The LL Frame provides a safe comfortable ride, while offering superior bump absorption in a value-priced aluminum frame.",337.22
+"LL Road Frame - Red, 60",Red,"The LL Frame provides a safe comfortable ride, while offering superior bump absorption in a value-priced aluminum frame.",306.5636
+"LL Road Frame - Red, 60",Red,"The LL Frame provides a safe comfortable ride, while offering superior bump absorption in a value-priced aluminum frame.",337.22
+"LL Road Frame - Red, 62",Red,"The LL Frame provides a safe comfortable ride, while offering superior bump absorption in a value-priced aluminum frame.",306.5636
+"LL Road Frame - Red, 62",Red,"The LL Frame provides a safe comfortable ride, while offering superior bump absorption in a value-priced aluminum frame.",337.22
+"ML Road Frame - Red, 44",Red,"Made from the same aluminum alloy as our top-of-the line HL frame, the ML features a lightweight down-tube milled to the perfect diameter for optimal strength. Men's version.",594.83
+"ML Road Frame - Red, 48",Red,"Made from the same aluminum alloy as our top-of-the line HL frame, the ML features a lightweight down-tube milled to the perfect diameter for optimal strength. Men's version.",594.83
+"ML Road Frame - Red, 52",Red,"Made from the same aluminum alloy as our top-of-the line HL frame, the ML features a lightweight down-tube milled to the perfect diameter for optimal strength. Men's version.",594.83
+"ML Road Frame - Red, 58",Red,"Made from the same aluminum alloy as our top-of-the line HL frame, the ML features a lightweight down-tube milled to the perfect diameter for optimal strength. Men's version.",594.83
+"ML Road Frame - Red, 60",Red,"Made from the same aluminum alloy as our top-of-the line HL frame, the ML features a lightweight down-tube milled to the perfect diameter for optimal strength. Men's version.",594.83
+"LL Road Frame - Black, 44",Black,"The LL Frame provides a safe comfortable ride, while offering superior bump absorption in a value-priced aluminum frame.",297.6346
+"LL Road Frame - Black, 44",Black,"The LL Frame provides a safe comfortable ride, while offering superior bump absorption in a value-priced aluminum frame.",306.5636
+"LL Road Frame - Black, 44",Black,"The LL Frame provides a safe comfortable ride, while offering superior bump absorption in a value-priced aluminum frame.",337.22
+"LL Road Frame - Black, 48",Black,"The LL Frame provides a safe comfortable ride, while offering superior bump absorption in a value-priced aluminum frame.",297.6346
+"LL Road Frame - Black, 48",Black,"The LL Frame provides a safe comfortable ride, while offering superior bump absorption in a value-priced aluminum frame.",306.5636
+"LL Road Frame - Black, 48",Black,"The LL Frame provides a safe comfortable ride, while offering superior bump absorption in a value-priced aluminum frame.",337.22
+"LL Road Frame - Black, 52",Black,"The LL Frame provides a safe comfortable ride, while offering superior bump absorption in a value-priced aluminum frame.",297.6346
+"LL Road Frame - Black, 52",Black,"The LL Frame provides a safe comfortable ride, while offering superior bump absorption in a value-priced aluminum frame.",306.5636
+"LL Road Frame - Black, 52",Black,"The LL Frame provides a safe comfortable ride, while offering superior bump absorption in a value-priced aluminum frame.",337.22
+"HL Mountain Frame - Silver, 42",Silver,Each frame is hand-crafted in our Bothell facility to the optimum diameter and wall-thickness required of a premium mountain frame. The heat-treated welded aluminum frame has a larger diameter tube that absorbs the bumps.,1204.3248
+"HL Mountain Frame - Silver, 42",Silver,Each frame is hand-crafted in our Bothell facility to the optimum diameter and wall-thickness required of a premium mountain frame. The heat-treated welded aluminum frame has a larger diameter tube that absorbs the bumps.,1240.4545
+"HL Mountain Frame - Silver, 42",Silver,Each frame is hand-crafted in our Bothell facility to the optimum diameter and wall-thickness required of a premium mountain frame. The heat-treated welded aluminum frame has a larger diameter tube that absorbs the bumps.,1364.5
+"HL Mountain Frame - Silver, 44",Silver,Each frame is hand-crafted in our Bothell facility to the optimum diameter and wall-thickness required of a premium mountain frame. The heat-treated welded aluminum frame has a larger diameter tube that absorbs the bumps.,1364.5
+"HL Mountain Frame - Silver, 48",Silver,Each frame is hand-crafted in our Bothell facility to the optimum diameter and wall-thickness required of a premium mountain frame. The heat-treated welded aluminum frame has a larger diameter tube that absorbs the bumps.,1364.5
+"HL Mountain Frame - Silver, 46",Silver,Each frame is hand-crafted in our Bothell facility to the optimum diameter and wall-thickness required of a premium mountain frame. The heat-treated welded aluminum frame has a larger diameter tube that absorbs the bumps.,1204.3248
+"HL Mountain Frame - Silver, 46",Silver,Each frame is hand-crafted in our Bothell facility to the optimum diameter and wall-thickness required of a premium mountain frame. The heat-treated welded aluminum frame has a larger diameter tube that absorbs the bumps.,1240.4545
+"HL Mountain Frame - Silver, 46",Silver,Each frame is hand-crafted in our Bothell facility to the optimum diameter and wall-thickness required of a premium mountain frame. The heat-treated welded aluminum frame has a larger diameter tube that absorbs the bumps.,1364.5
+"HL Mountain Frame - Black, 42",Black,Each frame is hand-crafted in our Bothell facility to the optimum diameter and wall-thickness required of a premium mountain frame. The heat-treated welded aluminum frame has a larger diameter tube that absorbs the bumps.,1191.1739
+"HL Mountain Frame - Black, 42",Black,Each frame is hand-crafted in our Bothell facility to the optimum diameter and wall-thickness required of a premium mountain frame. The heat-treated welded aluminum frame has a larger diameter tube that absorbs the bumps.,1226.9091
+"HL Mountain Frame - Black, 42",Black,Each frame is hand-crafted in our Bothell facility to the optimum diameter and wall-thickness required of a premium mountain frame. The heat-treated welded aluminum frame has a larger diameter tube that absorbs the bumps.,1349.6
+"HL Mountain Frame - Black, 44",Black,Each frame is hand-crafted in our Bothell facility to the optimum diameter and wall-thickness required of a premium mountain frame. The heat-treated welded aluminum frame has a larger diameter tube that absorbs the bumps.,1349.6
+"HL Mountain Frame - Black, 48",Black,Each frame is hand-crafted in our Bothell facility to the optimum diameter and wall-thickness required of a premium mountain frame. The heat-treated welded aluminum frame has a larger diameter tube that absorbs the bumps.,1349.6
+"HL Mountain Frame - Black, 46",Black,Each frame is hand-crafted in our Bothell facility to the optimum diameter and wall-thickness required of a premium mountain frame. The heat-treated welded aluminum frame has a larger diameter tube that absorbs the bumps.,1191.1739
+"HL Mountain Frame - Black, 46",Black,Each frame is hand-crafted in our Bothell facility to the optimum diameter and wall-thickness required of a premium mountain frame. The heat-treated welded aluminum frame has a larger diameter tube that absorbs the bumps.,1226.9091
+"HL Mountain Frame - Black, 46",Black,Each frame is hand-crafted in our Bothell facility to the optimum diameter and wall-thickness required of a premium mountain frame. The heat-treated welded aluminum frame has a larger diameter tube that absorbs the bumps.,1349.6
+"HL Mountain Frame - Black, 38",Black,Each frame is hand-crafted in our Bothell facility to the optimum diameter and wall-thickness required of a premium mountain frame. The heat-treated welded aluminum frame has a larger diameter tube that absorbs the bumps.,1191.1739
+"HL Mountain Frame - Black, 38",Black,Each frame is hand-crafted in our Bothell facility to the optimum diameter and wall-thickness required of a premium mountain frame. The heat-treated welded aluminum frame has a larger diameter tube that absorbs the bumps.,1226.9091
+"HL Mountain Frame - Black, 38",Black,Each frame is hand-crafted in our Bothell facility to the optimum diameter and wall-thickness required of a premium mountain frame. The heat-treated welded aluminum frame has a larger diameter tube that absorbs the bumps.,1349.6
+"HL Mountain Frame - Silver, 38",Silver,Each frame is hand-crafted in our Bothell facility to the optimum diameter and wall-thickness required of a premium mountain frame. The heat-treated welded aluminum frame has a larger diameter tube that absorbs the bumps.,1204.3248
+"HL Mountain Frame - Silver, 38",Silver,Each frame is hand-crafted in our Bothell facility to the optimum diameter and wall-thickness required of a premium mountain frame. The heat-treated welded aluminum frame has a larger diameter tube that absorbs the bumps.,1240.4545
+"HL Mountain Frame - Silver, 38",Silver,Each frame is hand-crafted in our Bothell facility to the optimum diameter and wall-thickness required of a premium mountain frame. The heat-treated welded aluminum frame has a larger diameter tube that absorbs the bumps.,1364.5
+"Road-150 Red, 62",Red,"This bike is ridden by race winners. Developed with the Adventure Works Cycles professional race team, it has a extremely light heat-treated aluminum frame, and steering that allows precision control.",3578.27
+"Road-150 Red, 44",Red,"This bike is ridden by race winners. Developed with the Adventure Works Cycles professional race team, it has a extremely light heat-treated aluminum frame, and steering that allows precision control.",3578.27
+"Road-150 Red, 48",Red,"This bike is ridden by race winners. Developed with the Adventure Works Cycles professional race team, it has a extremely light heat-treated aluminum frame, and steering that allows precision control.",3578.27
+"Road-150 Red, 52",Red,"This bike is ridden by race winners. Developed with the Adventure Works Cycles professional race team, it has a extremely light heat-treated aluminum frame, and steering that allows precision control.",3578.27
+"Road-150 Red, 56",Red,"This bike is ridden by race winners. Developed with the Adventure Works Cycles professional race team, it has a extremely light heat-treated aluminum frame, and steering that allows precision control.",3578.27
+"Road-450 Red, 58",Red,"A true multi-sport bike that offers streamlined riding and a revolutionary design. Aerodynamic design lets you ride with the pros, and the gearing will conquer hilly roads.",1457.99
+"Road-450 Red, 60",Red,"A true multi-sport bike that offers streamlined riding and a revolutionary design. Aerodynamic design lets you ride with the pros, and the gearing will conquer hilly roads.",1457.99
+"Road-450 Red, 44",Red,"A true multi-sport bike that offers streamlined riding and a revolutionary design. Aerodynamic design lets you ride with the pros, and the gearing will conquer hilly roads.",1457.99
+"Road-450 Red, 48",Red,"A true multi-sport bike that offers streamlined riding and a revolutionary design. Aerodynamic design lets you ride with the pros, and the gearing will conquer hilly roads.",1457.99
+"Road-450 Red, 52",Red,"A true multi-sport bike that offers streamlined riding and a revolutionary design. Aerodynamic design lets you ride with the pros, and the gearing will conquer hilly roads.",1457.99
+"Road-650 Red, 58",Red,"Value-priced bike with many features of our top-of-the-line models. Has the same light, stiff frame, and the quick acceleration we're famous for.",699.0982
+"Road-650 Red, 58",Red,"Value-priced bike with many features of our top-of-the-line models. Has the same light, stiff frame, and the quick acceleration we're famous for.",782.99
+"Road-650 Red, 60",Red,"Value-priced bike with many features of our top-of-the-line models. Has the same light, stiff frame, and the quick acceleration we're famous for.",699.0982
+"Road-650 Red, 60",Red,"Value-priced bike with many features of our top-of-the-line models. Has the same light, stiff frame, and the quick acceleration we're famous for.",782.99
+"Road-650 Red, 62",Red,"Value-priced bike with many features of our top-of-the-line models. Has the same light, stiff frame, and the quick acceleration we're famous for.",699.0982
+"Road-650 Red, 62",Red,"Value-priced bike with many features of our top-of-the-line models. Has the same light, stiff frame, and the quick acceleration we're famous for.",782.99
+"Road-650 Red, 44",Red,"Value-priced bike with many features of our top-of-the-line models. Has the same light, stiff frame, and the quick acceleration we're famous for.",699.0982
+"Road-650 Red, 44",Red,"Value-priced bike with many features of our top-of-the-line models. Has the same light, stiff frame, and the quick acceleration we're famous for.",782.99
+"Road-650 Red, 48",Red,"Value-priced bike with many features of our top-of-the-line models. Has the same light, stiff frame, and the quick acceleration we're famous for.",699.0982
+"Road-650 Red, 48",Red,"Value-priced bike with many features of our top-of-the-line models. Has the same light, stiff frame, and the quick acceleration we're famous for.",782.99
+"Road-650 Red, 52",Red,"Value-priced bike with many features of our top-of-the-line models. Has the same light, stiff frame, and the quick acceleration we're famous for.",699.0982
+"Road-650 Red, 52",Red,"Value-priced bike with many features of our top-of-the-line models. Has the same light, stiff frame, and the quick acceleration we're famous for.",782.99
+"Road-650 Black, 58",Black,"Value-priced bike with many features of our top-of-the-line models. Has the same light, stiff frame, and the quick acceleration we're famous for.",699.0982
+"Road-650 Black, 58",Black,"Value-priced bike with many features of our top-of-the-line models. Has the same light, stiff frame, and the quick acceleration we're famous for.",782.99
+"Road-650 Black, 60",Black,"Value-priced bike with many features of our top-of-the-line models. Has the same light, stiff frame, and the quick acceleration we're famous for.",699.0982
+"Road-650 Black, 60",Black,"Value-priced bike with many features of our top-of-the-line models. Has the same light, stiff frame, and the quick acceleration we're famous for.",782.99
+"Road-650 Black, 62",Black,"Value-priced bike with many features of our top-of-the-line models. Has the same light, stiff frame, and the quick acceleration we're famous for.",699.0982
+"Road-650 Black, 62",Black,"Value-priced bike with many features of our top-of-the-line models. Has the same light, stiff frame, and the quick acceleration we're famous for.",782.99
+"Road-650 Black, 44",Black,"Value-priced bike with many features of our top-of-the-line models. Has the same light, stiff frame, and the quick acceleration we're famous for.",699.0982
+"Road-650 Black, 44",Black,"Value-priced bike with many features of our top-of-the-line models. Has the same light, stiff frame, and the quick acceleration we're famous for.",782.99
+"Road-650 Black, 48",Black,"Value-priced bike with many features of our top-of-the-line models. Has the same light, stiff frame, and the quick acceleration we're famous for.",699.0982
+"Road-650 Black, 48",Black,"Value-priced bike with many features of our top-of-the-line models. Has the same light, stiff frame, and the quick acceleration we're famous for.",782.99
+"Road-650 Black, 52",Black,"Value-priced bike with many features of our top-of-the-line models. Has the same light, stiff frame, and the quick acceleration we're famous for.",699.0982

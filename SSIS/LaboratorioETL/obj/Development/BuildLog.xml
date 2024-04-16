@@ -2,7 +2,7 @@
 <BuildLog xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <ProjectInfo>
     <Name>LaboratorioETL</Name>
-    <LastWriteTime>2024-04-08T18:50:04.5208036Z</LastWriteTime>
+    <LastWriteTime>2024-04-14T22:44:23.3824191Z</LastWriteTime>
     <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
   </ProjectInfo>
   <LastBuildInfos>
@@ -19,6 +19,31 @@
     <ProjectBuildItemInfo>
       <Name>01-AggregationMulticast.dtsx</Name>
       <LastWriteTime>2024-04-08T18:59:07.9569086Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>04-unionall.dtsx</Name>
+      <LastWriteTime>2024-04-14T22:43:34.0056258Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>05-merge.dtsx</Name>
+      <LastWriteTime>2024-04-14T22:44:23.3168615Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>06-MergeJoin.dtsx</Name>
+      <LastWriteTime>2024-04-10T17:41:06.5372573Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>07-DerivedColumn.dtsx</Name>
+      <LastWriteTime>2024-04-13T21:54:43.9544251Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>08-ConditionalSplit.dtsx</Name>
+      <LastWriteTime>2024-04-13T21:39:44.2876777Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
   </LastBuildInfos>

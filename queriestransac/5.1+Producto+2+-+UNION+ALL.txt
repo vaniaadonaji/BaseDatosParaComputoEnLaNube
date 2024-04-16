@@ -1,0 +1,134 @@
+EnglishProductName,Color,EnglishDescription,ListPrice
+"Road-650 Black, 52",Black,"Value-priced bike with many features of our top-of-the-line models. Has the same light, stiff frame, and the quick acceleration we're famous for.",782.99
+"Mountain-100 Silver, 38",Silver,"Top-of-the-line competition mountain bike. Performance-enhancing options include the innovative HL Frame, super-smooth front suspension, and traction for all terrain.",3399.99
+"Mountain-100 Silver, 42",Silver,"Top-of-the-line competition mountain bike. Performance-enhancing options include the innovative HL Frame, super-smooth front suspension, and traction for all terrain.",3399.99
+"Mountain-100 Silver, 44",Silver,"Top-of-the-line competition mountain bike. Performance-enhancing options include the innovative HL Frame, super-smooth front suspension, and traction for all terrain.",3399.99
+"Mountain-100 Silver, 48",Silver,"Top-of-the-line competition mountain bike. Performance-enhancing options include the innovative HL Frame, super-smooth front suspension, and traction for all terrain.",3399.99
+"Mountain-100 Black, 38",Black,"Top-of-the-line competition mountain bike. Performance-enhancing options include the innovative HL Frame, super-smooth front suspension, and traction for all terrain.",3374.99
+"Mountain-100 Black, 42",Black,"Top-of-the-line competition mountain bike. Performance-enhancing options include the innovative HL Frame, super-smooth front suspension, and traction for all terrain.",3374.99
+"Mountain-100 Black, 44",Black,"Top-of-the-line competition mountain bike. Performance-enhancing options include the innovative HL Frame, super-smooth front suspension, and traction for all terrain.",3374.99
+"Mountain-100 Black, 48",Black,"Top-of-the-line competition mountain bike. Performance-enhancing options include the innovative HL Frame, super-smooth front suspension, and traction for all terrain.",3374.99
+"Mountain-200 Silver, 38",Silver,Serious back-country riding. Perfect for all levels of competition. Uses the same HL Frame as the Mountain-100.,2071.4196
+"Mountain-200 Silver, 38",Silver,Serious back-country riding. Perfect for all levels of competition. Uses the same HL Frame as the Mountain-100.,2319.99
+"Mountain-200 Silver, 42",Silver,Serious back-country riding. Perfect for all levels of competition. Uses the same HL Frame as the Mountain-100.,2071.4196
+"Mountain-200 Silver, 42",Silver,Serious back-country riding. Perfect for all levels of competition. Uses the same HL Frame as the Mountain-100.,2319.99
+"Mountain-200 Silver, 46",Silver,Serious back-country riding. Perfect for all levels of competition. Uses the same HL Frame as the Mountain-100.,2071.4196
+"Mountain-200 Silver, 46",Silver,Serious back-country riding. Perfect for all levels of competition. Uses the same HL Frame as the Mountain-100.,2319.99
+"Mountain-200 Black, 38",Black,Serious back-country riding. Perfect for all levels of competition. Uses the same HL Frame as the Mountain-100.,2049.0982
+"Mountain-200 Black, 38",Black,Serious back-country riding. Perfect for all levels of competition. Uses the same HL Frame as the Mountain-100.,2294.99
+"Mountain-200 Black, 42",Black,Serious back-country riding. Perfect for all levels of competition. Uses the same HL Frame as the Mountain-100.,2049.0982
+"Mountain-200 Black, 42",Black,Serious back-country riding. Perfect for all levels of competition. Uses the same HL Frame as the Mountain-100.,2294.99
+"Mountain-200 Black, 46",Black,Serious back-country riding. Perfect for all levels of competition. Uses the same HL Frame as the Mountain-100.,2049.0982
+"Mountain-200 Black, 46",Black,Serious back-country riding. Perfect for all levels of competition. Uses the same HL Frame as the Mountain-100.,2294.99
+"Mountain-300 Black, 38",Black,For true trail addicts.  An extremely durable bike that will go anywhere and keep you in control on challenging terrain - without breaking your budget.,1079.99
+"Mountain-300 Black, 40",Black,For true trail addicts.  An extremely durable bike that will go anywhere and keep you in control on challenging terrain - without breaking your budget.,1079.99
+"Mountain-300 Black, 44",Black,For true trail addicts.  An extremely durable bike that will go anywhere and keep you in control on challenging terrain - without breaking your budget.,1079.99
+"Mountain-300 Black, 48",Black,For true trail addicts.  An extremely durable bike that will go anywhere and keep you in control on challenging terrain - without breaking your budget.,1079.99
+"Road-250 Red, 44",Red,"Alluminum-alloy frame provides a light, stiff ride, whether you are racing in the velodrome or on a demanding club ride on country roads.",2443.35
+"Road-250 Red, 48",Red,"Alluminum-alloy frame provides a light, stiff ride, whether you are racing in the velodrome or on a demanding club ride on country roads.",2443.35
+"Road-250 Red, 52",Red,"Alluminum-alloy frame provides a light, stiff ride, whether you are racing in the velodrome or on a demanding club ride on country roads.",2443.35
+"Road-250 Red, 58",Red,"Alluminum-alloy frame provides a light, stiff ride, whether you are racing in the velodrome or on a demanding club ride on country roads.",2181.5625
+"Road-250 Red, 58",Red,"Alluminum-alloy frame provides a light, stiff ride, whether you are racing in the velodrome or on a demanding club ride on country roads.",2443.35
+"Road-250 Black, 44",Black,"Alluminum-alloy frame provides a light, stiff ride, whether you are racing in the velodrome or on a demanding club ride on country roads.",2181.5625
+"Road-250 Black, 44",Black,"Alluminum-alloy frame provides a light, stiff ride, whether you are racing in the velodrome or on a demanding club ride on country roads.",2443.35
+"Road-250 Black, 48",Black,"Alluminum-alloy frame provides a light, stiff ride, whether you are racing in the velodrome or on a demanding club ride on country roads.",2181.5625
+"Road-250 Black, 48",Black,"Alluminum-alloy frame provides a light, stiff ride, whether you are racing in the velodrome or on a demanding club ride on country roads.",2443.35
+"Road-250 Black, 52",Black,"Alluminum-alloy frame provides a light, stiff ride, whether you are racing in the velodrome or on a demanding club ride on country roads.",2181.5625
+"Road-250 Black, 52",Black,"Alluminum-alloy frame provides a light, stiff ride, whether you are racing in the velodrome or on a demanding club ride on country roads.",2443.35
+"Road-250 Black, 58",Black,"Alluminum-alloy frame provides a light, stiff ride, whether you are racing in the velodrome or on a demanding club ride on country roads.",2181.5625
+"Road-250 Black, 58",Black,"Alluminum-alloy frame provides a light, stiff ride, whether you are racing in the velodrome or on a demanding club ride on country roads.",2443.35
+"Road-550-W Yellow, 38",Yellow,"Same technology as all of our Road series bikes, but the frame is sized for a woman.  Perfect all-around bike for road or racing.",1000.4375
+"Road-550-W Yellow, 38",Yellow,"Same technology as all of our Road series bikes, but the frame is sized for a woman.  Perfect all-around bike for road or racing.",1120.49
+"Road-550-W Yellow, 40",Yellow,"Same technology as all of our Road series bikes, but the frame is sized for a woman.  Perfect all-around bike for road or racing.",1000.4375
+"Road-550-W Yellow, 40",Yellow,"Same technology as all of our Road series bikes, but the frame is sized for a woman.  Perfect all-around bike for road or racing.",1120.49
+"Road-550-W Yellow, 42",Yellow,"Same technology as all of our Road series bikes, but the frame is sized for a woman.  Perfect all-around bike for road or racing.",1000.4375
+"Road-550-W Yellow, 42",Yellow,"Same technology as all of our Road series bikes, but the frame is sized for a woman.  Perfect all-around bike for road or racing.",1120.49
+"Road-550-W Yellow, 44",Yellow,"Same technology as all of our Road series bikes, but the frame is sized for a woman.  Perfect all-around bike for road or racing.",1000.4375
+"Road-550-W Yellow, 44",Yellow,"Same technology as all of our Road series bikes, but the frame is sized for a woman.  Perfect all-around bike for road or racing.",1120.49
+"Road-550-W Yellow, 48",Yellow,"Same technology as all of our Road series bikes, but the frame is sized for a woman.  Perfect all-around bike for road or racing.",1000.4375
+"Road-550-W Yellow, 48",Yellow,"Same technology as all of our Road series bikes, but the frame is sized for a woman.  Perfect all-around bike for road or racing.",1120.49
+LL Fork,NA,Stout design absorbs shock and offers more precise steering.,148.22
+ML Fork,NA,Composite road fork with an aluminum steerer tube.,175.49
+HL Fork,NA,High-performance carbon road fork with curved legs.,229.49
+LL Headset,NA,Threadless headset provides quality at an economical price.,34.2
+ML Headset,NA,Sealed cartridge keeps dirt out.,102.29
+HL Headset,NA,"High-quality 1"" threadless headset with a grease port for quick lubrication.",124.73
+LL Mountain Handlebars,NA,All-purpose bar for on or off-road.,40.4909
+LL Mountain Handlebars,NA,All-purpose bar for on or off-road.,44.54
+ML Mountain Handlebars,NA,Tough aluminum alloy bars for downhill.,56.2909
+ML Mountain Handlebars,NA,Tough aluminum alloy bars for downhill.,61.92
+HL Mountain Handlebars,NA,Flat bar strong enough for the pro circuit.,109.3364
+HL Mountain Handlebars,NA,Flat bar strong enough for the pro circuit.,120.27
+LL Road Handlebars,NA,Unique shape provides easier reach to the levers.,40.4909
+LL Road Handlebars,NA,Unique shape provides easier reach to the levers.,44.54
+ML Road Handlebars,NA,Anatomically shaped aluminum tube bar will suit all riders.,56.2909
+ML Road Handlebars,NA,Anatomically shaped aluminum tube bar will suit all riders.,61.92
+HL Road Handlebars,NA,Designed for racers; high-end anatomically shaped bar from aluminum alloy.,109.3364
+HL Road Handlebars,NA,Designed for racers; high-end anatomically shaped bar from aluminum alloy.,120.27
+"ML Mountain Frame - Black, 38",Black,The ML frame is a heat-treated aluminum frame made with the same detail and quality as our HL frame. It offers superior performance. Men's version.,348.76
+LL Mountain Front Wheel,Black,Replacement mountain wheel for entry-level rider.,60.745
+ML Mountain Front Wheel,Black,Replacement mountain wheel for the casual to serious rider.,209.025
+HL Mountain Front Wheel,Black,High-performance mountain replacement wheel.,300.215
+LL Road Front Wheel,Black,Replacement road front wheel for entry-level cyclist.,85.565
+ML Road Front Wheel,Black,Sturdy alloy features a quick-release hub.,248.385
+HL Road Front Wheel,Black,Strong wheel with double-walled rim.,330.06
+Touring Front Wheel,Black,Aerodynamic rims for smooth riding.,218.01
+"ML Road Frame-W - Yellow, 38",Yellow,"Made from the same aluminum alloy as our top-of-the line HL frame, the ML features a lightweight down-tube milled to the perfect diameter for optimal strength. Women's version.",540.7545
+"ML Road Frame-W - Yellow, 38",Yellow,"Made from the same aluminum alloy as our top-of-the line HL frame, the ML features a lightweight down-tube milled to the perfect diameter for optimal strength. Women's version.",594.83
+LL Mountain Rear Wheel,Black,Replacement mountain wheel for entry-level rider.,87.745
+ML Mountain Rear Wheel,Black,Replacement mountain wheel for the casual to serious rider.,236.025
+HL Mountain Rear Wheel,Black,High-performance mountain replacement wheel.,327.215
+LL Road Rear Wheel,Black,Replacement road rear wheel for entry-level cyclist.,112.565
+ML Road Rear Wheel,Black,Aluminum alloy rim with stainless steel spokes; built for speed.,275.385
+HL Road Rear Wheel,Black,Strong rear wheel with double-walled rim.,357.06
+Touring Rear Wheel,Black,Excellent aerodynamic rims guarantee a smooth ride.,245.01
+"ML Mountain Frame - Black, 40",Black,The ML frame is a heat-treated aluminum frame made with the same detail and quality as our HL frame. It offers superior performance. Women's version.,348.76
+"ML Mountain Frame - Black, 44",Black,The ML frame is a heat-treated aluminum frame made with the same detail and quality as our HL frame. It offers superior performance. Women's version.,348.76
+"ML Mountain Frame - Black, 48",Black,The ML frame is a heat-treated aluminum frame made with the same detail and quality as our HL frame. It offers superior performance. Women's version.,348.76
+"ML Road Frame-W - Yellow, 40",Yellow,"Made from the same aluminum alloy as our top-of-the line HL frame, the ML features a lightweight down-tube milled to the perfect diameter for optimal strength. Women's version.",540.7545
+"ML Road Frame-W - Yellow, 40",Yellow,"Made from the same aluminum alloy as our top-of-the line HL frame, the ML features a lightweight down-tube milled to the perfect diameter for optimal strength. Women's version.",594.83
+"ML Road Frame-W - Yellow, 42",Yellow,"Made from the same aluminum alloy as our top-of-the line HL frame, the ML features a lightweight down-tube milled to the perfect diameter for optimal strength. Women's version.",540.7545
+"ML Road Frame-W - Yellow, 42",Yellow,"Made from the same aluminum alloy as our top-of-the line HL frame, the ML features a lightweight down-tube milled to the perfect diameter for optimal strength. Women's version.",594.83
+"ML Road Frame-W - Yellow, 44",Yellow,"Made from the same aluminum alloy as our top-of-the line HL frame, the ML features a lightweight down-tube milled to the perfect diameter for optimal strength. Women's version.",540.7545
+"ML Road Frame-W - Yellow, 44",Yellow,"Made from the same aluminum alloy as our top-of-the line HL frame, the ML features a lightweight down-tube milled to the perfect diameter for optimal strength. Women's version.",594.83
+"ML Road Frame-W - Yellow, 48",Yellow,"Made from the same aluminum alloy as our top-of-the line HL frame, the ML features a lightweight down-tube milled to the perfect diameter for optimal strength. Women's version.",540.7545
+"ML Road Frame-W - Yellow, 48",Yellow,"Made from the same aluminum alloy as our top-of-the line HL frame, the ML features a lightweight down-tube milled to the perfect diameter for optimal strength. Women's version.",594.83
+"HL Road Frame - Black, 62",Black,Our lightest and best quality aluminum frame made from the newest alloy; it is welded and heat-treated for strength. Our innovative design results in maximum comfort and performance.,1301.3636
+"HL Road Frame - Black, 62",Black,Our lightest and best quality aluminum frame made from the newest alloy; it is welded and heat-treated for strength. Our innovative design results in maximum comfort and performance.,1431.5
+"HL Road Frame - Black, 44",Black,Our lightest and best quality aluminum frame made from the newest alloy; it is welded and heat-treated for strength. Our innovative design results in maximum comfort and performance.,1301.3636
+"HL Road Frame - Black, 44",Black,Our lightest and best quality aluminum frame made from the newest alloy; it is welded and heat-treated for strength. Our innovative design results in maximum comfort and performance.,1431.5
+"HL Road Frame - Black, 48",Black,Our lightest and best quality aluminum frame made from the newest alloy; it is welded and heat-treated for strength. Our innovative design results in maximum comfort and performance.,1301.3636
+"HL Road Frame - Black, 48",Black,Our lightest and best quality aluminum frame made from the newest alloy; it is welded and heat-treated for strength. Our innovative design results in maximum comfort and performance.,1431.5
+"HL Road Frame - Black, 52",Black,Our lightest and best quality aluminum frame made from the newest alloy; it is welded and heat-treated for strength. Our innovative design results in maximum comfort and performance.,1301.3636
+"HL Road Frame - Black, 52",Black,Our lightest and best quality aluminum frame made from the newest alloy; it is welded and heat-treated for strength. Our innovative design results in maximum comfort and performance.,1431.5
+"Men's Sports Shorts, S",Black,Men's 8-panel racing shorts - lycra with an elastic waistband and leg grippers.,59.99
+"Touring-Panniers, Large",Grey,"Durable, water-proof nylon construction with easy access. Large enough for weekend trips.",125
+Cable Lock,NA,"Wraps to fit front and rear tires, carrier and 2 keys included.",25
+Minipump,NA,Designed for convenience. Fits in your pocket. Aluminum barrel. 160psi rated.,19.99
+Mountain Pump,NA,Simple and light-weight. Emergency patches stored in handle.,24.99
+Taillights - Battery-Powered,NA,Affordable light for safe night riding - uses 3 AAA batteries,13.99
+Headlights - Dual-Beam,NA,Rechargeable dual-beam headlight.,34.99
+Headlights - Weatherproof,NA,Rugged weatherproof headlight.,44.99
+"Men's Sports Shorts, M",Black,Men's 8-panel racing shorts - lycra with an elastic waistband and leg grippers.,59.99
+"Men's Sports Shorts, L",Black,Men's 8-panel racing shorts - lycra with an elastic waistband and leg grippers.,59.99
+"Men's Sports Shorts, XL",Black,Men's 8-panel racing shorts - lycra with an elastic waistband and leg grippers.,59.99
+"Women's Tights, S",Black,Warm spandex tights for winter riding; seamless chamois construction eliminates pressure points.,74.99
+"Women's Tights, M",Black,Warm spandex tights for winter riding; seamless chamois construction eliminates pressure points.,74.99
+"Women's Tights, L",Black,Warm spandex tights for winter riding; seamless chamois construction eliminates pressure points.,74.99
+"Men's Bib-Shorts, S",Multi,"Designed for the AWC team with stay-put straps, moisture-control, chamois padding, and leg grippers.",89.99
+"Men's Bib-Shorts, M",Multi,"Designed for the AWC team with stay-put straps, moisture-control, chamois padding, and leg grippers.",89.99
+"Men's Bib-Shorts, L",Multi,"Designed for the AWC team with stay-put straps, moisture-control, chamois padding, and leg grippers.",89.99
+"Half-Finger Gloves, S",Black,"Full padding, improved finger flex, durable palm, adjustable closure.",23.5481
+"Half-Finger Gloves, S",Black,"Full padding, improved finger flex, durable palm, adjustable closure.",24.49
+"Half-Finger Gloves, M",Black,"Full padding, improved finger flex, durable palm, adjustable closure.",23.5481
+"Half-Finger Gloves, M",Black,"Full padding, improved finger flex, durable palm, adjustable closure.",24.49
+"Half-Finger Gloves, L",Black,"Full padding, improved finger flex, durable palm, adjustable closure.",23.5481
+"Half-Finger Gloves, L",Black,"Full padding, improved finger flex, durable palm, adjustable closure.",24.49
+"Full-Finger Gloves, S",Black,"Synthetic palm, flexible knuckles, breathable mesh upper. Worn by the AWC team riders.",37.99
+"Full-Finger Gloves, M",Black,"Synthetic palm, flexible knuckles, breathable mesh upper. Worn by the AWC team riders.",37.99
+"Full-Finger Gloves, L",Black,"Synthetic palm, flexible knuckles, breathable mesh upper. Worn by the AWC team riders.",37.99
+"Classic Vest, S",Blue,"Light-weight, wind-resistant, packs to fit into a pocket.",63.5
+"Classic Vest, M",Blue,"Light-weight, wind-resistant, packs to fit into a pocket.",63.5
+"Classic Vest, L",Blue,"Light-weight, wind-resistant, packs to fit into a pocket.",63.5
+"Women's Mountain Shorts, S",Black,"Heavy duty, abrasion-resistant shorts feature seamless, lycra inner shorts with anti-bacterial chamois for comfort.",69.99
+"Women's Mountain Shorts, M",Black,"Heavy duty, abrasion-resistant shorts feature seamless, lycra inner shorts with anti-bacterial chamois for comfort.",69.99

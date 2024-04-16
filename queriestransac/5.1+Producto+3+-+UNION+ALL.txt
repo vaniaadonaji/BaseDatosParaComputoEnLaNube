@@ -1,0 +1,132 @@
+EnglishProductName,Color,EnglishDescription,ListPrice
+"Women's Mountain Shorts, L",Black,"Heavy duty, abrasion-resistant shorts feature seamless, lycra inner shorts with anti-bacterial chamois for comfort.",69.99
+Water Bottle - 30 oz.,NA,AWC logo water bottle - holds 30 oz; leak-proof.,4.99
+Mountain Bottle Cage,NA,Tough aluminum cage holds bottle securly on tough terrain.,9.99
+Road Bottle Cage,NA,Aluminum cage is lighter than our mountain version; perfect for long distance trips.,8.99
+Patch Kit/8 Patches,NA,"Includes 8 different size patches, glue and sandpaper.",2.29
+"Racing Socks, M",White,"Thin, lightweight and durable with cuffs that stay up.",8.99
+"Racing Socks, L",White,"Thin, lightweight and durable with cuffs that stay up.",8.99
+Hitch Rack - 4-Bike,NA,"Carries 4 bikes securely; steel construction, fits 2"" receiver hitch.",120
+Bike Wash - Dissolver,NA,"Washes off the toughest road grime; dissolves grease, environmentally safe. 1-liter bottle.",7.95
+Fender Set - Mountain,NA,Clip-on fenders fit most mountain bikes.,21.98
+All-Purpose Bike Stand,NA,Perfect all-purpose bike stand for working on your bike at home. Quick-adjusting clamps and steel construction.,159
+Hydration Pack - 70 oz.,Silver,"Versatile 70 oz hydration pack offers extra storage, easy-fill access, and a waist belt.",54.99
+"Short-Sleeve Classic Jersey, S",Yellow,"Short sleeve classic breathable jersey with superior moisture control, front zipper, and 3 back pockets.",53.99
+"Short-Sleeve Classic Jersey, M",Yellow,"Short sleeve classic breathable jersey with superior moisture control, front zipper, and 3 back pockets.",53.99
+"Short-Sleeve Classic Jersey, L",Yellow,"Short sleeve classic breathable jersey with superior moisture control, front zipper, and 3 back pockets.",53.99
+"Short-Sleeve Classic Jersey, XL",Yellow,"Short sleeve classic breathable jersey with superior moisture control, front zipper, and 3 back pockets.",53.99
+"HL Touring Frame - Yellow, 60",Yellow,The HL aluminum frame is custom-shaped for both good looks and strength; it will withstand the most rigorous challenges of daily riding. Men's version.,1003.91
+"LL Touring Frame - Yellow, 62",Yellow,Lightweight butted aluminum frame provides a more upright riding position for a trip around town.  Our ground-breaking design provides optimum comfort.,333.42
+"HL Touring Frame - Yellow, 46",Yellow,The HL aluminum frame is custom-shaped for both good looks and strength; it will withstand the most rigorous challenges of daily riding. Men's version.,1003.91
+"HL Touring Frame - Yellow, 50",Yellow,The HL aluminum frame is custom-shaped for both good looks and strength; it will withstand the most rigorous challenges of daily riding. Men's version.,1003.91
+"HL Touring Frame - Yellow, 54",Yellow,The HL aluminum frame is custom-shaped for both good looks and strength; it will withstand the most rigorous challenges of daily riding. Men's version.,1003.91
+"HL Touring Frame - Blue, 46",Blue,The HL aluminum frame is custom-shaped for both good looks and strength; it will withstand the most rigorous challenges of daily riding. Men's version.,1003.91
+"HL Touring Frame - Blue, 50",Blue,The HL aluminum frame is custom-shaped for both good looks and strength; it will withstand the most rigorous challenges of daily riding. Men's version.,1003.91
+"HL Touring Frame - Blue, 54",Blue,The HL aluminum frame is custom-shaped for both good looks and strength; it will withstand the most rigorous challenges of daily riding. Men's version.,1003.91
+"HL Touring Frame - Blue, 60",Blue,The HL aluminum frame is custom-shaped for both good looks and strength; it will withstand the most rigorous challenges of daily riding. Men's version.,1003.91
+Rear Derailleur,Silver,Wide-link design.,121.46
+"LL Touring Frame - Blue, 50",Blue,Lightweight butted aluminum frame provides a more upright riding position for a trip around town.  Our ground-breaking design provides optimum comfort.,333.42
+"LL Touring Frame - Blue, 54",Blue,Lightweight butted aluminum frame provides a more upright riding position for a trip around town.  Our ground-breaking design provides optimum comfort.,333.42
+"LL Touring Frame - Blue, 58",Blue,Lightweight butted aluminum frame provides a more upright riding position for a trip around town.  Our ground-breaking design provides optimum comfort.,333.42
+"LL Touring Frame - Blue, 62",Blue,Lightweight butted aluminum frame provides a more upright riding position for a trip around town.  Our ground-breaking design provides optimum comfort.,333.42
+"LL Touring Frame - Yellow, 44",Yellow,Lightweight butted aluminum frame provides a more upright riding position for a trip around town.  Our ground-breaking design provides optimum comfort.,333.42
+"LL Touring Frame - Yellow, 50",Yellow,Lightweight butted aluminum frame provides a more upright riding position for a trip around town.  Our ground-breaking design provides optimum comfort.,333.42
+"LL Touring Frame - Yellow, 54",Yellow,Lightweight butted aluminum frame provides a more upright riding position for a trip around town.  Our ground-breaking design provides optimum comfort.,333.42
+"LL Touring Frame - Yellow, 58",Yellow,Lightweight butted aluminum frame provides a more upright riding position for a trip around town.  Our ground-breaking design provides optimum comfort.,333.42
+"LL Touring Frame - Blue, 44",Blue,Lightweight butted aluminum frame provides a more upright riding position for a trip around town.  Our ground-breaking design provides optimum comfort.,333.42
+"ML Mountain Frame-W - Silver, 40",Silver,The ML frame is a heat-treated aluminum frame made with the same detail and quality as our HL frame. It offers superior performance. Men's version.,364.09
+"ML Mountain Frame-W - Silver, 42",Silver,The ML frame is a heat-treated aluminum frame made with the same detail and quality as our HL frame. It offers superior performance. Men's version.,364.09
+"ML Mountain Frame-W - Silver, 46",Silver,The ML frame is a heat-treated aluminum frame made with the same detail and quality as our HL frame. It offers superior performance. Men's version.,364.09
+Rear Brakes,Silver,NULL,106.5
+LL Mountain Seat/Saddle,NA,Synthetic leather. Features gel for increased comfort.,27.12
+ML Mountain Seat/Saddle,NA,Designed to absorb shock.,39.14
+HL Mountain Seat/Saddle,NA,Anatomic design for a full-day of riding in comfort. Durable leather.,52.64
+LL Road Seat/Saddle,NA,Lightweight foam-padded saddle.,27.12
+ML Road Seat/Saddle,NA,Rubber bumpers absorb bumps.,39.14
+HL Road Seat/Saddle,NA,Lightweight kevlar racing saddle. Leather.,52.64
+LL Touring Seat/Saddle,NA,"Comfortable, ergonomically shaped gel saddle.",27.12
+ML Touring Seat/Saddle,NA,New design relieves pressure for long rides.,39.14
+HL Touring Seat/Saddle,NA,Cut-out shell for a more comfortable ride.,52.64
+"LL Mountain Frame - Silver, 42",Silver,"Our best value utilizing the same, ground-breaking frame technology as the ML aluminum frame.",264.05
+"LL Mountain Frame - Silver, 44",Silver,"Our best value utilizing the same, ground-breaking frame technology as the ML aluminum frame.",264.05
+"LL Mountain Frame - Silver, 48",Silver,"Our best value utilizing the same, ground-breaking frame technology as the ML aluminum frame.",264.05
+"LL Mountain Frame - Silver, 52",Silver,"Our best value utilizing the same, ground-breaking frame technology as the ML aluminum frame.",264.05
+Mountain Tire Tube,NA,Self-sealing tube.,4.99
+Road Tire Tube,NA,Conventional all-purpose tube.,3.99
+Touring Tire Tube,NA,General purpose tube.,4.99
+"LL Mountain Frame - Black, 42",Black,"Our best value utilizing the same, ground-breaking frame technology as the ML aluminum frame.",249.79
+"LL Mountain Frame - Black, 44",Black,"Our best value utilizing the same, ground-breaking frame technology as the ML aluminum frame.",249.79
+"LL Mountain Frame - Black, 48",Black,"Our best value utilizing the same, ground-breaking frame technology as the ML aluminum frame.",249.79
+"LL Mountain Frame - Black, 52",Black,"Our best value utilizing the same, ground-breaking frame technology as the ML aluminum frame.",249.79
+LL Mountain Tire,NA,"Comparible traction, less expensive wire bead casing.",24.99
+ML Mountain Tire,NA,"Great traction, high-density rubber.",29.99
+HL Mountain Tire,NA,"Incredible traction, lightweight carbon reinforced.",35
+LL Road Tire,NA,Same great treads as more expensive tire with a less expensive wire bead casing.,21.49
+ML Road Tire,NA,Higher density rubber.,24.99
+HL Road Tire,NA,Lightweight carbon reinforced  for an unrivaled ride at an un-compromised weight.,32.6
+Touring Tire,NA,High-density rubber.,28.99
+LL Mountain Pedal,Silver/Black,Expanded platform so you can ride in any shoes; great for all-around riding.,40.49
+ML Mountain Pedal,Silver/Black,"Lightweight, durable, clipless pedal with adjustable tension.",62.09
+HL Mountain Pedal,Silver/Black,Stainless steel; designed to shed mud easily.,80.99
+LL Road Pedal,Silver/Black,Clipless pedals - aluminum.,40.49
+ML Road Pedal,Silver/Black,Lightweight aluminum alloy construction.,62.09
+HL Road Pedal,Silver/Black,Top-of-the-line clipless pedals with adjustable tension.,80.99
+Touring Pedal,Silver/Black,A stable pedal for all-day riding.,80.99
+"ML Mountain Frame-W - Silver, 38",Silver,The ML frame is a heat-treated aluminum frame made with the same detail and quality as our HL frame. It offers superior performance. Men's version.,364.09
+"LL Mountain Frame - Black, 40",Black,"Our best value utilizing the same, ground-breaking frame technology as the ML aluminum frame.",249.79
+"LL Mountain Frame - Silver, 40",Silver,"Our best value utilizing the same, ground-breaking frame technology as the ML aluminum frame.",264.05
+Front Derailleur,Silver,Wide-link design.,91.49
+LL Touring Handlebars,NA,Unique shape reduces fatigue for entry level riders.,46.09
+HL Touring Handlebars,NA,A light yet stiff aluminum bar for long distance riding.,91.57
+Front Brakes,Silver,All-weather brake pads; provides superior stopping by applying more surface to the rim.,106.5
+LL Crankset,Black,Super rigid spindle.,175.49
+ML Crankset,Black,High-strength crank arm.,256.49
+HL Crankset,Black,Triple crankset; alumunim crank arm; flawless shifting.,404.99
+Chain,Silver,Superior shifting performance.,20.24
+"Touring-2000 Blue, 60",Blue,"The plush custom saddle keeps you riding all day,  and there's plenty of space to add panniers and bike bags to the newly-redesigned carrier.  This bike has stability when fully-loaded.",1214.85
+"Touring-1000 Yellow, 46",Yellow,Travel in style and comfort. Designed for maximum comfort and safety. Wide gear range takes on all hills. High-tech aluminum alloy construction provides durability without added weight.,2384.07
+"Touring-1000 Yellow, 50",Yellow,Travel in style and comfort. Designed for maximum comfort and safety. Wide gear range takes on all hills. High-tech aluminum alloy construction provides durability without added weight.,2384.07
+"Touring-1000 Yellow, 54",Yellow,Travel in style and comfort. Designed for maximum comfort and safety. Wide gear range takes on all hills. High-tech aluminum alloy construction provides durability without added weight.,2384.07
+"Touring-1000 Yellow, 60",Yellow,Travel in style and comfort. Designed for maximum comfort and safety. Wide gear range takes on all hills. High-tech aluminum alloy construction provides durability without added weight.,2384.07
+"Touring-3000 Blue, 54",Blue,"All-occasion value bike with our basic comfort and safety features. Offers wider, more stable tires for a ride around town or weekend trip.",742.35
+"Touring-3000 Blue, 58",Blue,"All-occasion value bike with our basic comfort and safety features. Offers wider, more stable tires for a ride around town or weekend trip.",742.35
+"Touring-3000 Blue, 62",Blue,"All-occasion value bike with our basic comfort and safety features. Offers wider, more stable tires for a ride around town or weekend trip.",742.35
+"Touring-3000 Yellow, 44",Yellow,"All-occasion value bike with our basic comfort and safety features. Offers wider, more stable tires for a ride around town or weekend trip.",742.35
+"Touring-3000 Yellow, 50",Yellow,"All-occasion value bike with our basic comfort and safety features. Offers wider, more stable tires for a ride around town or weekend trip.",742.35
+"Touring-3000 Yellow, 54",Yellow,"All-occasion value bike with our basic comfort and safety features. Offers wider, more stable tires for a ride around town or weekend trip.",742.35
+"Touring-3000 Yellow, 58",Yellow,"All-occasion value bike with our basic comfort and safety features. Offers wider, more stable tires for a ride around town or weekend trip.",742.35
+"Touring-3000 Yellow, 62",Yellow,"All-occasion value bike with our basic comfort and safety features. Offers wider, more stable tires for a ride around town or weekend trip.",742.35
+"Touring-1000 Blue, 46",Blue,Travel in style and comfort. Designed for maximum comfort and safety. Wide gear range takes on all hills. High-tech aluminum alloy construction provides durability without added weight.,2384.07
+"Touring-1000 Blue, 50",Blue,Travel in style and comfort. Designed for maximum comfort and safety. Wide gear range takes on all hills. High-tech aluminum alloy construction provides durability without added weight.,2384.07
+"Touring-1000 Blue, 54",Blue,Travel in style and comfort. Designed for maximum comfort and safety. Wide gear range takes on all hills. High-tech aluminum alloy construction provides durability without added weight.,2384.07
+"Touring-1000 Blue, 60",Blue,Travel in style and comfort. Designed for maximum comfort and safety. Wide gear range takes on all hills. High-tech aluminum alloy construction provides durability without added weight.,2384.07
+"Touring-2000 Blue, 46",Blue,"The plush custom saddle keeps you riding all day,  and there's plenty of space to add panniers and bike bags to the newly-redesigned carrier.  This bike has stability when fully-loaded.",1214.85
+"Touring-2000 Blue, 50",Blue,"The plush custom saddle keeps you riding all day,  and there's plenty of space to add panniers and bike bags to the newly-redesigned carrier.  This bike has stability when fully-loaded.",1214.85
+"Touring-2000 Blue, 54",Blue,"The plush custom saddle keeps you riding all day,  and there's plenty of space to add panniers and bike bags to the newly-redesigned carrier.  This bike has stability when fully-loaded.",1214.85
+"Road-350-W Yellow, 40",Yellow,"Cross-train, race, or just socialize on a sleek, aerodynamic bike designed for a woman.  Advanced seat technology provides comfort all day.",1700.99
+"Road-350-W Yellow, 42",Yellow,"Cross-train, race, or just socialize on a sleek, aerodynamic bike designed for a woman.  Advanced seat technology provides comfort all day.",1700.99
+"Road-350-W Yellow, 44",Yellow,"Cross-train, race, or just socialize on a sleek, aerodynamic bike designed for a woman.  Advanced seat technology provides comfort all day.",1700.99
+"Road-350-W Yellow, 48",Yellow,"Cross-train, race, or just socialize on a sleek, aerodynamic bike designed for a woman.  Advanced seat technology provides comfort all day.",1700.99
+"Road-750 Black, 58",Black,Entry level adult bike; offers a comfortable ride cross-country or down the block. Quick-release hubs and rims.,539.99
+"Touring-3000 Blue, 44",Blue,"All-occasion value bike with our basic comfort and safety features. Offers wider, more stable tires for a ride around town or weekend trip.",742.35
+"Touring-3000 Blue, 50",Blue,"All-occasion value bike with our basic comfort and safety features. Offers wider, more stable tires for a ride around town or weekend trip.",742.35
+"Mountain-400-W Silver, 38",Silver,"This bike delivers a high-level of performance on a budget. It is responsive and maneuverable, and offers peace-of-mind when you decide to go off-road.",769.49
+"Mountain-400-W Silver, 40",Silver,"This bike delivers a high-level of performance on a budget. It is responsive and maneuverable, and offers peace-of-mind when you decide to go off-road.",769.49
+"Mountain-400-W Silver, 42",Silver,"This bike delivers a high-level of performance on a budget. It is responsive and maneuverable, and offers peace-of-mind when you decide to go off-road.",769.49
+"Mountain-400-W Silver, 46",Silver,"This bike delivers a high-level of performance on a budget. It is responsive and maneuverable, and offers peace-of-mind when you decide to go off-road.",769.49
+"Mountain-500 Silver, 40",Silver,"Suitable for any type of riding, on or off-road. Fits any budget. Smooth-shifting with a comfortable ride.",564.99
+"Mountain-500 Silver, 42",Silver,"Suitable for any type of riding, on or off-road. Fits any budget. Smooth-shifting with a comfortable ride.",564.99
+"Mountain-500 Silver, 44",Silver,"Suitable for any type of riding, on or off-road. Fits any budget. Smooth-shifting with a comfortable ride.",564.99
+"Mountain-500 Silver, 48",Silver,"Suitable for any type of riding, on or off-road. Fits any budget. Smooth-shifting with a comfortable ride.",564.99
+"Mountain-500 Silver, 52",Silver,"Suitable for any type of riding, on or off-road. Fits any budget. Smooth-shifting with a comfortable ride.",564.99
+"Mountain-500 Black, 40",Black,"Suitable for any type of riding, on or off-road. Fits any budget. Smooth-shifting with a comfortable ride.",539.99
+"Mountain-500 Black, 42",Black,"Suitable for any type of riding, on or off-road. Fits any budget. Smooth-shifting with a comfortable ride.",539.99
+"Mountain-500 Black, 44",Black,"Suitable for any type of riding, on or off-road. Fits any budget. Smooth-shifting with a comfortable ride.",539.99
+"Mountain-500 Black, 48",Black,"Suitable for any type of riding, on or off-road. Fits any budget. Smooth-shifting with a comfortable ride.",539.99
+"Mountain-500 Black, 52",Black,"Suitable for any type of riding, on or off-road. Fits any budget. Smooth-shifting with a comfortable ride.",539.99
+LL Bottom Bracket,NA,Chromoly steel.,53.99
+ML Bottom Bracket,NA,Aluminum alloy cups; large diameter spindle.,101.24
+HL Bottom Bracket,NA,Aluminum alloy cups and a hollow axle.,121.49
+"Road-750 Black, 44",Black,Entry level adult bike; offers a comfortable ride cross-country or down the block. Quick-release hubs and rims.,539.99
+"Road-750 Black, 48",Black,Entry level adult bike; offers a comfortable ride cross-country or down the block. Quick-release hubs and rims.,539.99
+"Road-750 Black, 52",Black,Entry level adult bike; offers a comfortable ride cross-country or down the block. Quick-release hubs and rims.,539.99
